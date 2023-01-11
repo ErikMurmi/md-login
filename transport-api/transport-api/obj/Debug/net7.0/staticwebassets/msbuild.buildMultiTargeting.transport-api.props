@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\transport-api.props" />
+</Project>
