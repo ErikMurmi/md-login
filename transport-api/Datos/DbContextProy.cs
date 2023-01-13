@@ -12,8 +12,8 @@ namespace Datos
     public  class DbContextProy: DbContext
     {
 
-       // public DbSet<Usuario> Usuarios { get; set; }//Exponer la coleccion de usuarios en ese objeto
-       // public DbSet<RolUsuarios> Roles { get; set; }//Exponer la coleccion de usuarios en ese objeto
+        public DbSet<Usuario> Usuarios { get; set; }//Exponer la coleccion de usuarios en ese objeto
+        public DbSet<RolUsuarios> Roles { get; set; }//Exponer la coleccion de usuarios en ese objeto
 
 
         //CONSTRUCTOR 
@@ -36,7 +36,7 @@ namespace Datos
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-AOB3SL3; Database=Proyecto_MS; Integrated Security=true; MultipleActiveResultSets=true; Trusted_Connection=True");
+                optionsBuilder.UseSqlServer("Server=LAPTOP-1745L0OO; Database=Proyecto_MS; Integrated Security=true; MultipleActiveResultSets=true; Trusted_Connection=TrueEncrypt=false;TrustServerCertificate=true");
             }
         }
 

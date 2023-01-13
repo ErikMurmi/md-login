@@ -15,3 +15,20 @@ C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\refint\Datos.dll
 C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.pdb
 C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.genruntimeconfig.cache
 C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\ref\Datos.dll
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\bin\Debug\net7.0\Datos.deps.json
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\bin\Debug\net7.0\Datos.runtimeconfig.json
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\bin\Debug\net7.0\Datos.dll
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\bin\Debug\net7.0\Datos.pdb
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\bin\Debug\net7.0\Entidades.dll
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\bin\Debug\net7.0\Entidades.pdb
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.AssemblyReference.cache
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.AssemblyInfoInputs.cache
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.AssemblyInfo.cs
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.CoreCompileInputs.cache
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.CopyComplete
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.dll
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\refint\Datos.dll
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.pdb
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.genruntimeconfig.cache
+D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\ref\Datos.dll
