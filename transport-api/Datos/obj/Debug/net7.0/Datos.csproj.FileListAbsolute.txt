@@ -1,0 +1,17 @@
+C:\Metodologia\transport-api\Datos\bin\Debug\net7.0\Datos.deps.json
+C:\Metodologia\transport-api\Datos\bin\Debug\net7.0\Datos.runtimeconfig.json
+C:\Metodologia\transport-api\Datos\bin\Debug\net7.0\Datos.dll
+C:\Metodologia\transport-api\Datos\bin\Debug\net7.0\Datos.pdb
+C:\Metodologia\transport-api\Datos\bin\Debug\net7.0\Entidades.dll
+C:\Metodologia\transport-api\Datos\bin\Debug\net7.0\Entidades.pdb
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.AssemblyReference.cache
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.AssemblyInfoInputs.cache
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.AssemblyInfo.cs
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.CoreCompileInputs.cache
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.CopyComplete
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.dll
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\refint\Datos.dll
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.pdb
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\Datos.genruntimeconfig.cache
+C:\Metodologia\transport-api\Datos\obj\Debug\net7.0\ref\Datos.dll

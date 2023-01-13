@@ -31,3 +31,10 @@ P:\md-login\transport-api\transport-api\obj\Debug\net7.0\refint\transport-api.dl
 P:\md-login\transport-api\transport-api\obj\Debug\net7.0\transport-api.pdb
 P:\md-login\transport-api\transport-api\obj\Debug\net7.0\transport-api.genruntimeconfig.cache
 P:\md-login\transport-api\transport-api\obj\Debug\net7.0\ref\transport-api.dll
+C:\Metodologia\transport-api\transport-api\obj\Debug\net7.0\transport-api.csproj.AssemblyReference.cache
+C:\Metodologia\transport-api\transport-api\obj\Debug\net7.0\transport-api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Metodologia\transport-api\transport-api\obj\Debug\net7.0\transport-api.AssemblyInfoInputs.cache
+C:\Metodologia\transport-api\transport-api\obj\Debug\net7.0\transport-api.AssemblyInfo.cs
+C:\Metodologia\transport-api\transport-api\obj\Debug\net7.0\transport-api.csproj.CoreCompileInputs.cache
+C:\Metodologia\transport-api\transport-api\obj\Debug\net7.0\transport-api.MvcApplicationPartsAssemblyInfo.cs
+C:\Metodologia\transport-api\transport-api\obj\Debug\net7.0\transport-api.MvcApplicationPartsAssemblyInfo.cache

@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "transport-api", "transport-api\transport-api.csproj", "{0C3D3C47-6F82-4FD2-9865-CE54749801CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "transport-api", "transport-api\transport-api.csproj", "{0C3D3C47-6F82-4FD2-9865-CE54749801CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{DC128F86-AF64-4541-8FB9-063BD3FBD13D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{018F6384-7B75-424C-AB10-9063D8C0478A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{0C3D3C47-6F82-4FD2-9865-CE54749801CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C3D3C47-6F82-4FD2-9865-CE54749801CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C3D3C47-6F82-4FD2-9865-CE54749801CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC128F86-AF64-4541-8FB9-063BD3FBD13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC128F86-AF64-4541-8FB9-063BD3FBD13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC128F86-AF64-4541-8FB9-063BD3FBD13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC128F86-AF64-4541-8FB9-063BD3FBD13D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018F6384-7B75-424C-AB10-9063D8C0478A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018F6384-7B75-424C-AB10-9063D8C0478A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018F6384-7B75-424C-AB10-9063D8C0478A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018F6384-7B75-424C-AB10-9063D8C0478A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
