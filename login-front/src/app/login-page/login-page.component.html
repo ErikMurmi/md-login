@@ -1,0 +1,23 @@
+<div class="form-container">
+    <form class="login-form">
+        <h1>LOG IN</h1>
+        <label htmlFor="username">Usuario</label>
+        <input name="username" onChange={handleChange}/>
+        <label htmlFor="password">Contraseña</label>
+        <input name="password" type="password" onChange={handleChange}/>
+        <label htmlFor="moneda">Moneda</label>
+        <select name="currency" onChange={handleChange}> 
+            <option value="">Selecciona una opción</option>
+            <option value="ARS">ARS</option>
+            <option value="BRL">BRL</option>
+            <option value="CLP">CLP</option>
+            <option value="COP">COP</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <input type="submit" value="Log In"/>
+    </form>
+    <hr className='vertical-line'/>
+    <img src="assets/imgs/acme_logo.png" alt="logo_icon" width="300" height="300" loading="lazy">
+    <!-- <img src={logo} alt='logo_icon' width={300} height={300} priority/> -->
+</div>

@@ -1,0 +1,42 @@
+.form-container{
+    background-color: white;
+    margin: 10% auto;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 30px;
+    width: fit-content;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    gap: 10px;
+}
+
+input{
+    border-color: #3999FF;
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px;
+}
+
+input[type="submit"]{
+    background-color:#4057ff ;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+}
+
+select{
+    border-color: #3999FF;
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px;
+}
