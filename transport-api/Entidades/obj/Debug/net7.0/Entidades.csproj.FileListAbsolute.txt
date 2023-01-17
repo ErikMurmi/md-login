@@ -22,3 +22,15 @@ D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\E
 D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Entidades\obj\Debug\net7.0\refint\Entidades.dll
 D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Entidades\obj\Debug\net7.0\Entidades.pdb
 D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Entidades\obj\Debug\net7.0\ref\Entidades.dll
+P:\md-login\transport-api\Entidades\bin\Debug\net7.0\Entidades.deps.json
+P:\md-login\transport-api\Entidades\bin\Debug\net7.0\Entidades.dll
+P:\md-login\transport-api\Entidades\bin\Debug\net7.0\Entidades.pdb
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\Entidades.csproj.AssemblyReference.cache
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\Entidades.AssemblyInfoInputs.cache
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\Entidades.AssemblyInfo.cs
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\Entidades.csproj.CoreCompileInputs.cache
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\Entidades.dll
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\refint\Entidades.dll
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\Entidades.pdb
+P:\md-login\transport-api\Entidades\obj\Debug\net7.0\ref\Entidades.dll

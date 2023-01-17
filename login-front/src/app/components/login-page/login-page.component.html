@@ -1,12 +1,12 @@
 <div class="form-container">
-    <form class="login-form">
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
         <h1>LOG IN</h1>
         <label htmlFor="username">Usuario</label>
-        <input name="username" onChange={handleChange}/>
+        <input  formControlName="EmailUsuario" name="username"/>
         <label htmlFor="password">Contraseña</label>
-        <input name="password" type="password" onChange={handleChange}/>
+        <input formControlName="PasswordUsuario" name="password" type="password" />
         <label htmlFor="moneda">Moneda</label>
-        <select name="currency" onChange={handleChange}> 
+        <select formControlName="currency" name="currency"> 
             <option value="">Selecciona una opción</option>
             <option value="ARS">ARS</option>
             <option value="BRL">BRL</option>

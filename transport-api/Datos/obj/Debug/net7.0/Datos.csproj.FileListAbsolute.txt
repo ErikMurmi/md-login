@@ -32,3 +32,20 @@ D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\D
 D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.pdb
 D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\Datos.genruntimeconfig.cache
 D:\UDLA\UDLA 7° SEMESTRE\METOD. DESARROLLO DE SOFTWARE\proyecto\transport-api\Datos\obj\Debug\net7.0\ref\Datos.dll
+P:\md-login\transport-api\Datos\bin\Debug\net7.0\Datos.deps.json
+P:\md-login\transport-api\Datos\bin\Debug\net7.0\Datos.runtimeconfig.json
+P:\md-login\transport-api\Datos\bin\Debug\net7.0\Datos.dll
+P:\md-login\transport-api\Datos\bin\Debug\net7.0\Datos.pdb
+P:\md-login\transport-api\Datos\bin\Debug\net7.0\Entidades.dll
+P:\md-login\transport-api\Datos\bin\Debug\net7.0\Entidades.pdb
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.AssemblyReference.cache
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.AssemblyInfoInputs.cache
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.AssemblyInfo.cs
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.CoreCompileInputs.cache
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.csproj.CopyComplete
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.dll
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\refint\Datos.dll
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.pdb
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\Datos.genruntimeconfig.cache
+P:\md-login\transport-api\Datos\obj\Debug\net7.0\ref\Datos.dll
