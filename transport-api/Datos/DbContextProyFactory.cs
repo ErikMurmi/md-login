@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entidades.Usuarios;
+using Entidades.Aplicaciones;
 
 namespace Datos
 {
@@ -14,6 +15,7 @@ namespace Datos
 
         public DbSet<Usuario> Usuarios { get; set; }//Exponer la coleccion de usuarios en ese objeto
         public DbSet<RolUsuarios> Roles { get; set; }//Exponer la coleccion de usuarios en ese objeto
+        public DbSet<Aplicacion> Aplicaciones { get; set; }//Exponer la coleccion de usuarios en ese objeto
         public DbContextProy CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<DbContextProy>();

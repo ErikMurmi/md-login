@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj": {}
+    "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj": {
+    "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\erikm\\.nuget\\packages\\",
-        "outputPath": "P:\\md-login\\transport-api\\Entidades\\obj\\",
+        "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Emgot\\.nuget\\packages\\",
+        "outputPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\erikm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Emgot\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

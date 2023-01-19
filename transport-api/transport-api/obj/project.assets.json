@@ -11135,19 +11135,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\erikm\\.nuget\\packages\\": {}
+    "C:\\Users\\Emgot\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "P:\\md-login\\transport-api\\transport-api\\transport-api.csproj",
+      "projectUniqueName": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\transport-api\\transport-api.csproj",
       "projectName": "transport-api",
-      "projectPath": "P:\\md-login\\transport-api\\transport-api\\transport-api.csproj",
-      "packagesPath": "C:\\Users\\erikm\\.nuget\\packages\\",
-      "outputPath": "P:\\md-login\\transport-api\\transport-api\\obj\\",
+      "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\transport-api\\transport-api.csproj",
+      "packagesPath": "C:\\Users\\Emgot\\.nuget\\packages\\",
+      "outputPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\transport-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\erikm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Emgot\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11161,11 +11161,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "P:\\md-login\\transport-api\\Datos\\Datos.csproj": {
-              "projectPath": "P:\\md-login\\transport-api\\Datos\\Datos.csproj"
+            "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Datos\\Datos.csproj": {
+              "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Datos\\Datos.csproj"
             },
-            "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj": {
-              "projectPath": "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj"
+            "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj": {
+              "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj"
             }
           }
         }
