@@ -1,5 +1,6 @@
 ﻿using Datos.Mapping.Usuarios;
 using Entidades.Aplicaciones;
+using Entidades.Transporte;
 using Entidades.Usuarios;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,6 +17,10 @@ namespace Datos
         public DbSet<Usuario> Usuarios { get; set; }//Exponer la coleccion de usuarios en ese objeto
         public DbSet<RolUsuarios> Roles { get; set; }//Exponer la coleccion de usuarios en ese objeto
         public DbSet<Aplicacion> Aplicaciones { get; set; }//Exponer la coleccion de usuarios en ese objeto
+        public DbSet<TransTecnico> TransTecnicos { get; set; }//Exponer la coleccion de usuarios en ese objeto
+
+        public DbSet<TransTecnicoAsegu> TransTecnicoAsegu { get; set; }//Exponer la coleccion de usuarios en ese objeto
+        public DbSet<TransBeneficiario> TransBeneficiario { get; set; }//Exponer la coleccion de usuarios en ese objeto
 
 
         //CONSTRUCTOR 
