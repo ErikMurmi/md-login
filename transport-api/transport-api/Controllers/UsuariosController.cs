@@ -302,6 +302,8 @@ namespace transport_api.Controllers
 
             var roles = new string[] { role.Nombre };
 
+
+
             var claims = new List<Claim>
             {
                 //Claims contiene informacion acerca del usuario
@@ -310,17 +312,21 @@ namespace transport_api.Controllers
                 new Claim (ClaimTypes.NameIdentifier, usuario.idUsuarios.ToString()),
                 new Claim (ClaimTypes.Email,email),
                 new Claim (ClaimTypes.Role,usuario.idRolUsuarios_FK.ToString()),
+
                 
                 //para VUE
                 new Claim ("idUsuarios",usuario.idUsuarios.ToString()),
                 new Claim ("NombreUsuario",usuario.NombreUsuario),
                 new Claim ("idRol",usuario.idRolUsuarios_FK.ToString()),
+                new Claim ("empresa",usuario.Empresa.ToString()),
                 new Claim("role", role.Nombre),
+                new Claim("empresa", role.Nombre),
+
 
 
 
             };
-            return Ok(new { token = GenerarToken(claims), rol = role.Nombre}
+            return Ok(new { token = GenerarToken(claims), rol = role.Nombre, emp = usuario.Empresa}
             );
         }
 

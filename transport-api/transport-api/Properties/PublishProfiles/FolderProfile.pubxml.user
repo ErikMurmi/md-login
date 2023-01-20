@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS_transporte</_PublishTargetUrl>
-    <History>True|2023-01-20T18:51:29.0196284Z;True|2023-01-20T09:09:30.3342983-05:00;True|2023-01-20T08:51:01.5213188-05:00;True|2023-01-19T23:46:17.5391613-05:00;True|2023-01-19T23:20:36.4434231-05:00;</History>
+    <_PublishTargetUrl>C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS</_PublishTargetUrl>
+    <History>True|2023-01-20T20:22:17.3064202Z;True|2023-01-20T13:51:29.0196284-05:00;True|2023-01-20T09:09:30.3342983-05:00;True|2023-01-20T08:51:01.5213188-05:00;True|2023-01-19T23:46:17.5391613-05:00;True|2023-01-19T23:20:36.4434231-05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
