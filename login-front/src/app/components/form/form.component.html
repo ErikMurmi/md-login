@@ -5,19 +5,31 @@
 <div class="form-app">
     <header>
         <h1>GENERAR APLICACIONES</h1>
-        <div class="header-info">
-            <h4>N° Póliza</h4>
-            <h4>N°</h4>
-            <h4>Fecha Apl</h4>
-        </div>
+        
         
     </header>
     <form class="form" (ngSubmit)="onSubmit(formData)" #formData="ngForm">
+        <div class="header-info">
+            <h4>N° Póliza</h4>
             
+        </div>
+            
+        <div>
+            <h4>N°</h4>
+            <input id="noApli" name="noApli" ngModel/>
+            
+        </div>
+        <div>
+            <h4>Fecha Apl</h4>
+            <input type="date" id="FechaApli" name="FechaApli" ngModel/>
+        </div>
             <div>
                 <label htmlFor="AseguradoApli">ASEGURADO</label>
-                <select id="AseguradoApli" name="AseguradoApli">
+                <select id="AseguradoApli" name="AseguradoApli" ngModel>
                     <option disabled selected>SELECCIONE</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                 </select>
             </div>
             <div>
@@ -29,9 +41,12 @@
                 <input id="BultosApli" name="BultosApli" ngModel/>
             </div> 
             <div>
-                <label htmlFor="pagador">PAGADOR</label>
-                <select id="PagadorApli" name="pagador" >
+                <label htmlFor="pagadorApli">PAGADOR</label>
+                <select id="PagadorApli" name="pagadorApli" ngModel>
                     <option disabled selected>SELECCIONE</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                 </select>
             </div>
             <div>
@@ -44,7 +59,7 @@
             </div>
             <div>
                 <label htmlFor="DesdeApli">DESDE</label>
-                <input id="DesdeApli" name="DesdeApli" ngModel/>
+                <input type="date" id="DesdeApli" name="DesdeApli" ngModel/>
             </div>
             <div>
                 <label htmlFor="OrdenCompraApli">ORDEN DE COMPRA</label>
@@ -56,7 +71,7 @@
             </div>
             <div>
                 <label htmlFor="HastaApli">HASTA</label>
-                <input id="HastaApli" name="HastaApli" ngModel/>
+                <input type="date" id="HastaApli" name="HastaApli" ngModel/>
             </div>
             <div>
                 <label htmlFor="AfianzadorAduanaApli">AFIANZADOR DE ADUANA</label>
@@ -68,8 +83,11 @@
             </div>
             <div>
                 <label htmlFor="TipoTransporApli">TIPO TRANSPORTE</label>
-                <select  id="TipoTransporApli" name="TipoTransporApli">
+                <select  id="TipoTransporApli" name="TipoTransporApli" ngModel>
                     <option disabled selected>SELECCIONE</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                 </select>
             </div>
             <div>
@@ -86,8 +104,11 @@
             </div>
             <div>
                 <label htmlFor="ItemsApli">ITEMS</label>
-                <select  id="ItemsApli" name="ItemsApli">
+                <select  id="ItemsApli" name="ItemsApli" ngModel>
                     <option disabled selected>SELECCIONE</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                 </select>
             </div>
             <div>
@@ -96,7 +117,7 @@
             </div>
             <div>
                 <label htmlFor="FechaEmbarqueApli">FECHA EMBARQUE</label>
-                <input id="FechaEmbarqueApli" name="FechaEmbarqueApli" ngModel/>
+                <input type="date" id="FechaEmbarqueApli" name="FechaEmbarqueApli" ngModel/>
             </div>
             <div>
                 <label htmlFor="Marca">MARCA</label>
@@ -120,7 +141,7 @@
             </div>
             <div>
                 <label htmlFor="FechaLlegadaApli">FECHA LLEGADA</label>
-                <input id="FechaLlegadaApli" name="FechaLlegadaApli" ngModel/>
+                <input type="date" id="FechaLlegadaApli" name="FechaLlegadaApli" ngModel/>
             </div>
             <div>
                 <label htmlFor="PesoBrutoApli">PESO BRUTO</label>

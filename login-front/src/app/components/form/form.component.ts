@@ -14,8 +14,9 @@ export class FormComponent {
     constructor(private http: HttpClient) { }
 
     onSubmit(formData:any) {
+      
         console.log(formData.value);
-        this.http.post('https://localhost:7075/api/Aplicaciones', formData)
+        this.http.post('http://domenicar16-001-site1.atempurl.com/api/Aplicaciones/Crear', formData.value)
           .subscribe(response => {
             console.log(response);
           });
