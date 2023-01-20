@@ -23,7 +23,7 @@ namespace transport_api.Controllers
             _context = context;
         }
 
-        // GET: api/Aplicaciones
+        // GET: api/Aplicaciones/Listar
         [HttpGet("[action]")]
         public async Task<IEnumerable<AplicacionViewModel>> Listar()
         {
@@ -64,17 +64,65 @@ namespace transport_api.Controllers
                 ObjetoSeguroApli = c.ObjetoSeguroApli, 
                 DescripcionApli = c.DescripcionApli,
                 ObservacionesApli = c.ObservacionesApli,
+                Empresa = c.Empresa
             });
 
-          /*if (_context.Aplicaciones == null)
-          {
-              return NotFound();
-          }
-            return await _context.Aplicaciones.ToListAsync();*/
+
+
+                /*if (_context.Aplicaciones == null)
+                {
+                    return NotFound();
+                }
+                  return await _context.Aplicaciones.ToListAsync();*/
+            }
+
+        // GET: api/Aplicaciones/ListarEmpresa
+        [HttpGet("[action]")]
+        public async Task<IEnumerable<AplicacionViewModel>> ListarEmpresa(string empre)
+        {
+            var aplicacion = await _context.Aplicaciones.ToListAsync();
+
+            return aplicacion.Select(c => new AplicacionViewModel
+            {
+                idAplicaciones = c.idAplicaciones,
+                idRolUsuarios_FK = c.idRolUsuarios_FK,
+                idPoliza_FK = c.idPoliza_FK,
+                FechaApli = c.FechaApli,
+                AseguradoApli = c.AseguradoApli,
+                PagadorApli = c.PagadorApli,
+                DesdeApli = c.DesdeApli,
+                HastaApli = c.HastaApli,
+                TipoTransporApli = c.TipoTransporApli,
+                PertenecienteApli = c.PertenecienteApli,
+                FechaEmbarqueApli = c.FechaEmbarqueApli,
+                ConsiganadaApli = c.ConsiganadaApli,
+                FechaLlegadaApli = c.FechaLlegadaApli,
+                EmbarcadoPorApli = c.EmbarcadoPorApli,
+                NotaPedidoApli = c.NotaPedidoApli,
+                OrdenCompraApli = c.OrdenCompraApli,
+                AfianzadorAduanaApli = c.AfianzadorAduanaApli,
+                IncotermsApli = c.IncotermsApli,
+                ItemsApli = c.ItemsApli,
+                Marca = c.Marca,
+                NOApli = c.NOApli,
+                PesoBrutoApli = c.PesoBrutoApli,
+                BultosApli = c.BultosApli,
+                MontoCompraApli = c.MontoCompraApli,
+                GastosJustificadosApli = c.GastosJustificadosApli,
+                SumaAseguradaApli = c.SumaAseguradaApli,
+                TasaApli = c.TasaApli,
+                ValorPrimaApli = c.ValorPrimaApli,
+                CoberturaApli = c.CoberturaApli,
+                DeducibleApli = c.DeducibleApli,
+                ObjetoSeguroApli = c.ObjetoSeguroApli,
+                DescripcionApli = c.DescripcionApli,
+                ObservacionesApli = c.ObservacionesApli,
+                Empresa = c.Empresa
+            }).Where(c => c.Empresa == empre);
         }
 
-        // GET: api/Aplicaciones/5
-        [HttpGet("[action]/{id}")]
+            // GET: api/Aplicaciones/5
+            [HttpGet("[action]/{id}")]
         public async Task<ActionResult<Aplicacion>> Mostrar(int id)
         {
           if (_context.Aplicaciones == null)
@@ -122,7 +170,7 @@ namespace transport_api.Controllers
             return NoContent();
         }
 
-        // POST: api/Aplicaciones
+        // POST: api/Aplicaciones/Crear
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost("[action]")]
         public async Task<ActionResult> Crear([FromBody] transport_api.Models.Aplicaciones.CreaAppViewModel c)
