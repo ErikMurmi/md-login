@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<header>
+    <h1>APLICACIONES</h1>
+</header>
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>NOApli</th>
+        <th>DesdeApli</th>
+        <th>HastaApli</th>
+        <th>MontoCompraApli</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of myDataArray">
+        <td>{{item.noApli}}</td>
+        <td>{{item.desdeApli}}</td>
+        <td>{{item.hastaApli}}</td>
+        <td>{{item.montoCompraApli}}</td>
+      </tr>
+    </tbody>
+  </table>
