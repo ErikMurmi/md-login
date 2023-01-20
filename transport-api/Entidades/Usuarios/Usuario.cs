@@ -19,6 +19,8 @@ namespace Entidades.Usuarios
         [Required]
         public string EmailUsuario { get; set; }
         [Required]
+        public string Empresa { get; set; }
+        [Required]
         public byte[] PasswordUsuario_hash { get; set; }
         [Required]
         public byte[] PasswordUsuario_salt { get; set; }

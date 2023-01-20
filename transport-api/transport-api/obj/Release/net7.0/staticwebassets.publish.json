@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9WIZYnhitWLLg9T2ycA82DqdNI++yJtv/j7XHqrsl/Y=",
+  "Source": "transport-api",
+  "BasePath": "_content/transport-api",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

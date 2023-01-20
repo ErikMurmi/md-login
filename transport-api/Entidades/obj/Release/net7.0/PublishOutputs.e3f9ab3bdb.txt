@@ -1,0 +1,15 @@
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Entidades.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Entidades.deps.json
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Entidades.pdb
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.EntityFrameworkCore.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.Logging.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.Options.dll
+C:\Users\domer\OneDrive\Escritorio\Semestre7\Proyecto_MS\Microsoft.Extensions.Primitives.dll

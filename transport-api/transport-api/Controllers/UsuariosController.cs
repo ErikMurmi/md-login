@@ -51,6 +51,7 @@ namespace transport_api.Controllers
                 NombreUsuario = c.NombreUsuario,
                 ApellidoUsuario = c.ApellidoUsuario,
                 EmailUsuario = c.EmailUsuario,
+                Empresa = c.Empresa,
                 PasswordUsuario_hash = c.PasswordUsuario_hash,
                 condicion = c.condicion,
                 rol = new RolViewModel
@@ -78,7 +79,8 @@ namespace transport_api.Controllers
                 idRolUsuarios_FK = usuariosRol.idRolUsuarios_FK,
                 NombreUsuario = usuariosRol.NombreUsuario,
                 ApellidoUsuario = usuariosRol.ApellidoUsuario,
-                EmailUsuario = usuariosRol.EmailUsuario
+                EmailUsuario = usuariosRol.EmailUsuario,
+                Empresa= usuariosRol.Empresa
             });
         }
 
@@ -107,6 +109,7 @@ namespace transport_api.Controllers
             usuarios.NombreUsuario = model.NombreUsuario;
             usuarios.ApellidoUsuario = model.ApellidoUsuario;
             usuarios.EmailUsuario = model.EmailUsuario.ToLower();
+            usuarios.Empresa = model.Empresa;
             //usuarios.PasswordUsuario_hash = model.PasswordUsuario_hash;
             //usuarios.PasswordUsuario_salt = model.PasswordUsuario_hash;
             if (model.act_password == true)
@@ -156,6 +159,7 @@ namespace transport_api.Controllers
                 NombreUsuario = model.NombreUsuario,
                 ApellidoUsuario = model.ApellidoUsuario,
                 EmailUsuario = model.EmailUsuario.ToLower(),
+                Empresa = model.Empresa,
                 PasswordUsuario_hash = passwordHash,
                 PasswordUsuario_salt = passwordSalt,
                 condicion = true

@@ -595,20 +595,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Emgot\\.nuget\\packages\\": {}
+    "C:\\Users\\domer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj",
-      "packagesPath": "C:\\Users\\Emgot\\.nuget\\packages\\",
-      "outputPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\obj\\",
+      "projectPath": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj",
+      "packagesPath": "C:\\Users\\domer\\.nuget\\packages\\",
+      "outputPath": "C:\\Metodologia\\transport-api\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Emgot\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\domer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

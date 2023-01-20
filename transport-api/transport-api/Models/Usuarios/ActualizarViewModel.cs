@@ -19,6 +19,8 @@ namespace transport_api.Models.Usuarios
         public string ApellidoUsuario { get; set; }
 
         public string EmailUsuario { get; set; }
+        public string Empresa { get; set; }
+
         public string PasswordUsuario { get; set; }
         public bool act_password { get; set; }
     }

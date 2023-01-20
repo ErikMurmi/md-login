@@ -14,6 +14,8 @@ namespace transport_api.Models.Usuarios
         public string NombreUsuario { get; set; }
         public string ApellidoUsuario { get; set; }
         public string EmailUsuario { get; set; }
+        public string Empresa { get; set; }
+
         public byte[] PasswordUsuario_hash { get; set; }
         public bool condicion { get; set; }
 
