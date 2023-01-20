@@ -1,0 +1,91 @@
+header{
+    margin-top: 5%;
+    background-color: #2078d6;
+    color: white;
+    text-align: center;
+    background-image: url(https://drive.google.com/uc?export=view&id=105dr0CV0IXA2XSqHpOVkocmBMEt-v203);
+}
+
+.form-app{
+    background-color: white;
+}
+.header-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin-left: 4%;
+    font-size: 20px;
+}
+.form{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-left: 4%;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-size: 16px;
+}
+select{
+    border-color: #3999FF;
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px 37px;
+    margin-top: 2%;
+}
+option{
+    opacity: 40%;
+}
+input::placeholder{
+    opacity: 40%;
+}
+input{
+    border-color: #3999FF;
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px;
+    margin-top: 2%;
+    text-align: left;
+}
+input[type="submit"]{
+    background-color:#4057ff ;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+}
+.row{
+    justify-content: space-between;
+}
+input, label {
+    display:block;
+}
+button{
+    display:block;
+    color: white;
+}
+.previsualizar{
+    background: #2C81E6;
+    border-radius: 10px;
+    width: 153px;
+    height: 40px;
+}
+.guardar{
+    width: 153px;
+    height: 40px;
+    background: #3e759c;
+    border-radius: 10px;
+}
+.imprimir{
+    width: 153px;
+    height: 40px;
+    background: #159D77;
+    border-radius: 10px;
+}
+.descripcion{
+    width: 300px; 
+    height: 70px; 
+}
+.observaciones{
+    width: 300px; 
+    height: 70px; 
+}

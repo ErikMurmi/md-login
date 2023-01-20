@@ -1,0 +1,148 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+<div class="form-app">
+    <header>
+        <h1>GENERAR APLICACIONES</h1>
+        <div class="header-info">
+            <h4>N° Póliza</h4>
+            <h4>N°</h4>
+            <h4>Fecha Apl</h4>
+        </div>
+        
+    </header>
+    <form class="form" (ngSubmit)="onSubmit(formData)" #formData="ngForm">
+            
+            <div>
+                <label htmlFor="AseguradoApli">ASEGURADO</label>
+                <select id="AseguradoApli" name="AseguradoApli">
+                    <option disabled selected>SELECCIONE</option>
+                </select>
+            </div>
+            <div>
+                <label htmlFor="EmbarcadoPorApli">EMBARGADOR POR</label>
+                <input id="EmbarcadoPorApli" name="EmbarcadoPorApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="BultosApli">BULTOS</label>
+                <input id="BultosApli" name="BultosApli" ngModel/>
+            </div> 
+            <div>
+                <label htmlFor="pagador">PAGADOR</label>
+                <select id="PagadorApli" name="pagador" >
+                    <option disabled selected>SELECCIONE</option>
+                </select>
+            </div>
+            <div>
+                <label htmlFor="NotaPedidoApli">NOTA DE PEDIDO</label>
+                <input id="NotaPedidoApli" name="NotaPedidoApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="MontoCompraApli">MONTO TOTAL COMPRA</label>
+                <input id="MontoCompraApli" name="MontoCompraApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="DesdeApli">DESDE</label>
+                <input id="DesdeApli" name="DesdeApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="OrdenCompraApli">ORDEN DE COMPRA</label>
+                <input id="OrdenCompraApli" name="OrdenCompraApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="GastosJustificadosApli">% OTROS GASTOS JUSTIFICADOS</label>
+                <input id="GastosJustificadosApli" name="GastosJustificadosApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="HastaApli">HASTA</label>
+                <input id="HastaApli" name="HastaApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="AfianzadorAduanaApli">AFIANZADOR DE ADUANA</label>
+                <input id="AfianzadorAduanaApli" name="AfianzadorAduanaApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="SumaAseguradaApli">SUMA ASEGURADA</label>
+                <input id="SumaAseguradaApli" name="SumaAseguradaApli" placeholder="SUMA ASEGURADA" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="TipoTransporApli">TIPO TRANSPORTE</label>
+                <select  id="TipoTransporApli" name="TipoTransporApli">
+                    <option disabled selected>SELECCIONE</option>
+                </select>
+            </div>
+            <div>
+                <label htmlFor="IncotermsApli">INCOTERMS</label>
+                <input id="IncotermsApli" name="IncotermsApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="TasaApli">TASA</label>
+                <input id="TasaApli" name="TasaApli" placeholder="%" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="PertenecienteApli">PERTECIENTE</label>
+                <input id="PertenecienteApli" name="PertenecienteApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="ItemsApli">ITEMS</label>
+                <select  id="ItemsApli" name="ItemsApli">
+                    <option disabled selected>SELECCIONE</option>
+                </select>
+            </div>
+            <div>
+                <label htmlFor="ValorPrimaApli">VALOR PRIMA</label>
+                <input id="ValorPrimaApli" name="ValorPrimaApli" placeholder="VALOR PRIMA" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="FechaEmbarqueApli">FECHA EMBARQUE</label>
+                <input id="FechaEmbarqueApli" name="FechaEmbarqueApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="Marca">MARCA</label>
+                <input id="Marca" name="Marca" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="CoberturaApli">COBERTURA</label>
+                <input id="CoberturaApli" name="CoberturaApli" placeholder="TODO RIESGO" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="ConsiganadaApli">CONSIGNADA A</label>
+                <input id="ConsiganadaApli" name="ConsiganadaApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="NOApli">NO°</label>
+                <input id="NOApli" name="NOApli"/>
+            </div>
+            <div>
+                <label htmlFor="DeducibleApli">DEDUCIBLE</label>
+                <input id="DeducibleApli" name="DeducibleApli" placeholder="10%" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="FechaLlegadaApli">FECHA LLEGADA</label>
+                <input id="FechaLlegadaApli" name="FechaLlegadaApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="PesoBrutoApli">PESO BRUTO</label>
+                <input id="PesoBrutoApli" name="PesoBrutoApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="ObjetoSeguroApli">OBJETO DEL SEGURO</label>
+                <input id="ObjetoSeguroApli" name="ObjetoSeguroApli" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="DescripcionApli">DESCRIPCIÓN CONTENIDO</label>
+                <input id="DescripcionApli" name="DescripcionApli" class="descripcion" ngModel/>
+            </div>
+            <div>
+                <label htmlFor="ObservacionesApli">OBSERVACIONES</label>
+                <input id="ObservacionesApli" name="ObservacionesApli" class="observaciones" ngModel/>
+            </div>
+            <pre></pre>
+            <button class="previsualizar">PREVISUALIZAR</button>
+            <button class="guardar" type="submit">GUARDAR</button>
+            <button class="imprimir">IMPRIMIR</button>
+            
+    </form>
+    
+</div>
