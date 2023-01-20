@@ -30,11 +30,11 @@ export class LoginPageComponent {
         this.user = res
 
         if(res.user === "Administrador"){
-          this.navigateToFybeca()
+          this.navigateToAdmin()
         }
 
         if(res.rol ==="Usuarios"){
-          this.navigateToAdmin()
+          this.navigateToFybeca()
         }
 
         // if(this.user === "Administrador"){

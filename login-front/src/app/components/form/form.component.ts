@@ -14,11 +14,12 @@ export class FormComponent {
     constructor(private http: HttpClient) { }
 
     onSubmit(formData:any) {
-      
+        formData.value["Empresa"] = "Supermaxi"
         console.log(formData.value);
         this.http.post('http://domenicar16-001-site1.atempurl.com/api/Aplicaciones/Crear', formData.value)
           .subscribe(response => {
             console.log(response);
+            alert("Se agrega correctamente")
           });
       }
       

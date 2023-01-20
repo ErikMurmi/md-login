@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient ,HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-busqueda',
@@ -17,7 +17,9 @@ export class BusquedaComponent {
 
   getData() {
     // replace with the appropriate URL for your back-end API
-    this.http.get('http://domenicar16-001-site1.atempurl.com/api/Aplicaciones/Listar').subscribe(data => {
+    let headers = new HttpHeaders();
+    headers = headers.delete("Access-Control-Allow-Origin");
+    this.http.get('http://domenicar16-001-site1.atempurl.com/api/Aplicaciones/Listar',{headers}).subscribe(data => {
       this.myDataArray = data as any[];
     });
   }
