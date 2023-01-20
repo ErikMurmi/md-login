@@ -320,7 +320,7 @@ namespace transport_api.Controllers
 
 
             };
-            return Ok(new { token = GenerarToken(claims) }
+            return Ok(new { token = GenerarToken(claims), rol = role.Nombre}
             );
         }
 

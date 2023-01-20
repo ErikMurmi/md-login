@@ -24,7 +24,7 @@ namespace Datos
         public DbContextProy CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<DbContextProy>();
-            optionsBuilder.UseSqlServer("Server=LAPTOP-1745L0OO\\MSSQLLocalDB;Database=Proyecto_MS;Trusted_Connection=True;MultipleActiveResultSets=trueEncrypt=false;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("Server=ERIKM\\SQLEXPRESS;Database=Proyecto_MS;Trusted_Connection=True;MultipleActiveResultSets=trueEncrypt=false;TrustServerCertificate=true");
 
             return new DbContextProy(optionsBuilder.Options);
         }

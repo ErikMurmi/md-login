@@ -22,10 +22,12 @@ export class LoginPageComponent {
     this.auth.login(this.loginForm.value)
     .subscribe({
       next:(res)=>{
-        alert(res.message)
+        //alert(res.message)
+        console.log('la respuesta es :',res)
       },
       error:(err)=>{
-        alert(err?.error.message)
+        console.log('la respuesta es :',err)
+        //alert(err?.error.message)
       }
     })
     console.log(formData);

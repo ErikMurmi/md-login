@@ -43,7 +43,7 @@ namespace Datos
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=LAPTOP-1745L0OO; Database=Proyecto_MS; Integrated Security=true; MultipleActiveResultSets=true; Trusted_Connection=TrueEncrypt=false;TrustServerCertificate=true");
+                optionsBuilder.UseSqlServer("Server=ERIKM\\SQLEXPRESS; Database=Proyecto_MS; Integrated Security=true; MultipleActiveResultSets=true; Trusted_Connection=TrueEncrypt=false;TrustServerCertificate=true");
             }
         }
 
