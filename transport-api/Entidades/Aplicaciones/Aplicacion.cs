@@ -79,7 +79,9 @@ namespace Entidades.Aplicaciones
             public string DescripcionApli { get; set; }
             [AllowNull]
             public string ObservacionesApli { get; set; }
-            public bool condicion { get; set; }
+            [AllowNull]
+            public string Empresa { get; set; }
+        public bool condicion { get; set; }
 
             //public RolUsuarios RolUsuarios { get; set; }
             //[ForeignKey("idRolUsuarios_FK")]

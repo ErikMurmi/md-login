@@ -69,5 +69,8 @@ namespace transport_api.Models.Aplicaciones
         public string DescripcionApli { get; set; }
         [AllowNull]
         public string ObservacionesApli { get; set; }
+        [AllowNull]
+        public string Empresa { get; set; }
+
     }
 }

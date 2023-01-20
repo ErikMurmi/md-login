@@ -37,6 +37,9 @@ namespace transport_api.Models.Aplicaciones
         public string ObjetoSeguroApli { get; set; }
         public string DescripcionApli { get; set; }
         public string ObservacionesApli { get; set; }
+
+        public string Empresa { get; set; }
+
         public bool condicion { get; set; }
     }
 }
