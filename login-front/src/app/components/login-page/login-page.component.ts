@@ -29,7 +29,7 @@ export class LoginPageComponent {
         console.log('la respuesta es :',res)
         this.user = res
 
-        if(res.user === "Administrador"){
+        if(res.rol === "Administrador"){
           this.navigateToAdmin()
         }
 
