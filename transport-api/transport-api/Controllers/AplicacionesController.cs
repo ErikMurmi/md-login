@@ -77,8 +77,8 @@ namespace transport_api.Controllers
             }
 
         // GET: api/Aplicaciones/ListarEmpresa
-        [HttpGet("[action]")]
-        public async Task<IEnumerable<AplicacionViewModel>> ListarEmpresa(string empre)
+        [HttpGet("[action]/{empresa}")]
+        public async Task<IEnumerable<AplicacionViewModel>> ListarEmpresa(string empresa)
         {
             var aplicacion = await _context.Aplicaciones.ToListAsync();
 
@@ -118,7 +118,7 @@ namespace transport_api.Controllers
                 DescripcionApli = c.DescripcionApli,
                 ObservacionesApli = c.ObservacionesApli,
                 Empresa = c.Empresa
-            }).Where(c => c.Empresa == empre);
+            }).Where(c => c.Empresa == empresa);
         }
 
             // GET: api/Aplicaciones/5
