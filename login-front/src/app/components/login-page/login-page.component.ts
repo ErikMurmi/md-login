@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { LoginServiceService } from 'src/app/services/login-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
@@ -9,7 +10,9 @@ import { LoginServiceService } from 'src/app/services/login-service.service';
 })
 export class LoginPageComponent {
   loginForm: FormGroup;
-  constructor(private auth: LoginServiceService){
+  user = {}
+
+  constructor(private auth: LoginServiceService, private router: Router ){
     this.loginForm = new FormGroup({
       EmailUsuario: new FormControl(''),
       PasswordUsuario: new FormControl(''),
@@ -24,6 +27,20 @@ export class LoginPageComponent {
       next:(res)=>{
         //alert(res.message)
         console.log('la respuesta es :',res)
+        this.user = res
+
+        if(res.user === "Administrador"){
+          this.navigateToFybeca()
+        }
+
+        if(res.rol ==="Usuarios"){
+          this.navigateToAdmin()
+        }
+
+        // if(this.user === "Administrador"){
+
+        // }
+        
       },
       error:(err)=>{
         console.log('la respuesta es :',err)
@@ -34,5 +51,17 @@ export class LoginPageComponent {
     // console.log(formData.password);
     // console.log(formData.currency);
     //llama al servicio de autenticacion
+  }
+
+  navigateToSupermaxi() {
+    this.router.navigate(['/form']);
+  }
+
+  navigateToFybeca() {
+    this.router.navigate(['/form']);
+  }
+
+  navigateToAdmin() {
+    this.router.navigate(['/buscar']);
   }
 }
