@@ -11,20 +11,24 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddCors(option =>
+/*builder.Services.AddCors(option =>
 {
   option.AddPolicy("OriginPolicy", builder =>
   {
     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
   });
-});
+});*/
 
 builder.Services.AddDbContext<DbContextProy>(options =>
     options.UseSqlServer("name=ConnectionStrings:Conexion"));
 
+builder.Services.AddCors(policyBuilder =>
+    policyBuilder.AddDefaultPolicy(policy =>
+        policy.WithOrigins("*").AllowAnyHeader().AllowAnyHeader())
+);
 
 var app = builder.Build();
-
+app.UseCors();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

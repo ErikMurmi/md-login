@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Metodologia\\transport-api\\transport-api\\transport-api.csproj": {}
+    "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\transport-api\\transport-api.csproj": {}
   },
   "projects": {
-    "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj": {
+    "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj",
+        "projectUniqueName": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\domer\\.nuget\\packages\\",
-        "outputPath": "C:\\Metodologia\\transport-api\\Datos\\obj\\",
+        "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\Emgot\\.nuget\\packages\\",
+        "outputPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Datos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\domer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Emgot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -34,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj"
+              "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj": {
+                "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -89,24 +83,18 @@
         }
       }
     },
-    "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj": {
+    "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\domer\\.nuget\\packages\\",
-        "outputPath": "C:\\Metodologia\\transport-api\\Entidades\\obj\\",
+        "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Emgot\\.nuget\\packages\\",
+        "outputPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\domer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Emgot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -156,24 +144,18 @@
         }
       }
     },
-    "C:\\Metodologia\\transport-api\\transport-api\\transport-api.csproj": {
+    "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\transport-api\\transport-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Metodologia\\transport-api\\transport-api\\transport-api.csproj",
+        "projectUniqueName": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\transport-api\\transport-api.csproj",
         "projectName": "transport-api",
-        "projectPath": "C:\\Metodologia\\transport-api\\transport-api\\transport-api.csproj",
-        "packagesPath": "C:\\Users\\domer\\.nuget\\packages\\",
-        "outputPath": "C:\\Metodologia\\transport-api\\transport-api\\obj\\",
+        "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\transport-api\\transport-api.csproj",
+        "packagesPath": "C:\\Users\\Emgot\\.nuget\\packages\\",
+        "outputPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\transport-api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\domer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Emgot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -186,11 +168,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj"
+              "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Datos\\Datos.csproj": {
+                "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Datos\\Datos.csproj"
               },
-              "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj"
+              "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj": {
+                "projectPath": "D:\\UDLA\\UDLA 7° SEMESTRE\\METOD. DESARROLLO DE SOFTWARE\\proyecto\\transport-api\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -205,9 +187,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.2, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
