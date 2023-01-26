@@ -68,12 +68,6 @@ namespace transport_api.Controllers
             });
 
 
-
-                /*if (_context.Aplicaciones == null)
-                {
-                    return NotFound();
-                }
-                  return await _context.Aplicaciones.ToListAsync();*/
             }
 
         // GET: api/Aplicaciones/ListarEmpresa
@@ -215,6 +209,7 @@ namespace transport_api.Controllers
                 ObjetoSeguroApli = c.ObjetoSeguroApli,
                 DescripcionApli = c.DescripcionApli,
                 ObservacionesApli = c.ObservacionesApli,
+                Empresa = c.Empresa
                 condicion = true
 
             };

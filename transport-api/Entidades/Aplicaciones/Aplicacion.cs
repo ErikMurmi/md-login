@@ -21,67 +21,74 @@ namespace Entidades.Aplicaciones
             public int idPoliza_FK { get; set; }
             [Required]
             public DateTime FechaApli { get; set; }
-            [AllowNull]
+            [Required]
+
             public string AseguradoApli { get; set; }
-            [AllowNull]
+            [Required]
             public string PagadorApli { get; set; }
             [Required]
+            
             public DateTime DesdeApli { get; set; }
             [Required]
             public DateTime HastaApli { get; set; }
-            [AllowNull]
+            [Required]
             public string TipoTransporApli { get; set; }
-            [AllowNull]
+            [Required]
             public string PertenecienteApli { get; set; }
-            [AllowNull]
+            [Required]
             public DateTime FechaEmbarqueApli { get; set; }
-            [AllowNull]
+            [Required]
             public string ConsiganadaApli { get; set; }
-            [AllowNull]
+            [Required]
             public DateTime FechaLlegadaApli { get; set; }
-            [AllowNull]
+            [Required]
             public string EmbarcadoPorApli { get; set; }
-            [AllowNull]
+            [Required]
             public string NotaPedidoApli { get; set; }
-            [AllowNull]
+            [Required]
             public string OrdenCompraApli { get; set; }
-            [AllowNull]
+            [Required]
             public string AfianzadorAduanaApli { get; set; }
-            [AllowNull]
+            [Required]
             public string IncotermsApli { get; set; }
-            [AllowNull]
+            [Required]
             public string ItemsApli { get; set; }
-            [AllowNull]
+            [Required]
             public string Marca { get; set; }
-            [AllowNull]
+            [Required]
             public string NOApli { get; set; }
-            [AllowNull]
+            [Required]
             public string PesoBrutoApli { get; set; }
-            [AllowNull]
+            [Required]
             public string BultosApli { get; set; }
-            [AllowNull]
+            [Required]
             public string MontoCompraApli { get; set; }
-            [AllowNull]
+            [Required]
             public string GastosJustificadosApli { get; set; }
-            [AllowNull]
+            [Required]
             public string SumaAseguradaApli { get; set; }
-            [AllowNull]
+            [Required]
             public string TasaApli { get; set; }
-            [AllowNull]
+            [Required]
             public string ValorPrimaApli { get; set; }
-            [AllowNull]
+            [Required]
             public string CoberturaApli { get; set; }
-            [AllowNull]
+            [Required]
             public string DeducibleApli { get; set; }
-            [AllowNull]
+            [Required]
             public string ObjetoSeguroApli { get; set; }
-            [AllowNull]
+            [Required]
+            [StringLength(200, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 200")]
             public string DescripcionApli { get; set; }
-            [AllowNull]
+            [Required]
+            [StringLength(200, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 200")]
+
             public string ObservacionesApli { get; set; }
-            [AllowNull]
+            [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string Empresa { get; set; }
-        public bool condicion { get; set; }
+            public bool condicion { get; set; }
 
             //public RolUsuarios RolUsuarios { get; set; }
             //[ForeignKey("idRolUsuarios_FK")]
