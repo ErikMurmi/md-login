@@ -22,9 +22,13 @@ namespace Entidades.Aplicaciones
             [Required]
             public DateTime FechaApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
 
             public string AseguradoApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string PagadorApli { get; set; }
             [Required]
             
@@ -32,50 +36,92 @@ namespace Entidades.Aplicaciones
             [Required]
             public DateTime HastaApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string TipoTransporApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string PertenecienteApli { get; set; }
             [Required]
             public DateTime FechaEmbarqueApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string ConsiganadaApli { get; set; }
             [Required]
             public DateTime FechaLlegadaApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string EmbarcadoPorApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string NotaPedidoApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string OrdenCompraApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string AfianzadorAduanaApli { get; set; }
             [Required]
-            public string IncotermsApli { get; set; }
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
+             public string IncotermsApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string ItemsApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string Marca { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string NOApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string PesoBrutoApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string BultosApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string MontoCompraApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string GastosJustificadosApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string SumaAseguradaApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string TasaApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string ValorPrimaApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string CoberturaApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string DeducibleApli { get; set; }
             [Required]
+            [StringLength(100, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 100")]
+
             public string ObjetoSeguroApli { get; set; }
             [Required]
             [StringLength(200, MinimumLength = 3, ErrorMessage = "Debe tenier minimo 3 caracteres y maximo 200")]
