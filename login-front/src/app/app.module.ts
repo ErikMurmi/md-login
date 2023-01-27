@@ -9,6 +9,7 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { FormComponent } from './components/form/form.component';
 import { BusquedaComponent } from './components/busqueda/busqueda.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

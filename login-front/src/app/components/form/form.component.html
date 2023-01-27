@@ -16,16 +16,16 @@
             
         <div>
             <h4>N°</h4>
-            <input id="noApli" name="noApli" ngModel/>
+            <input id="noApli" name="noApli" ngModel required/>
             
         </div>
         <div>
             <h4>Fecha Apl</h4>
-            <input type="date" id="FechaApli" name="FechaApli" ngModel/>
+            <input type="date" id="FechaApli" name="FechaApli" ngModel required/>
         </div>
             <div>
                 <label htmlFor="AseguradoApli">ASEGURADO</label>
-                <select id="AseguradoApli" name="AseguradoApli" ngModel>
+                <select id="AseguradoApli" name="AseguradoApli" ngModel required>
                     <option disabled selected>SELECCIONE</option>
                     <option value="1">ERIK</option>
                     <option value="2">DOMÉNICA</option>
@@ -36,15 +36,15 @@
             </div>
             <div>
                 <label htmlFor="EmbarcadoPorApli">EMBARGADOR POR</label>
-                <input id="EmbarcadoPorApli" name="EmbarcadoPorApli" ngModel/>
+                <input id="EmbarcadoPorApli" name="EmbarcadoPorApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="BultosApli">BULTOS</label>
-                <input type="number" id="BultosApli" name="BultosApli" ngModel/>
+                <input type="number" id="BultosApli" name="BultosApli" ngModel required/>
             </div> 
             <div>
                 <label htmlFor="pagadorApli">PAGADOR</label>
-                <select id="PagadorApli" name="pagadorApli" ngModel>
+                <select id="PagadorApli" name="pagadorApli" ngModel required>
                     <option disabled selected>SELECCIONE</option>
                     <option value="1">ERIK</option>
                     <option value="2">DOMÉNICA</option>
@@ -55,39 +55,39 @@
             </div>
             <div>
                 <label htmlFor="NotaPedidoApli">NOTA DE PEDIDO</label>
-                <input id="NotaPedidoApli" name="NotaPedidoApli" ngModel/>
+                <input id="NotaPedidoApli" name="NotaPedidoApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="MontoCompraApli">MONTO TOTAL COMPRA</label>
-                <input type="number" id="MontoCompraApli" name="MontoCompraApli" ngModel/>
+                <input type="number" id="MontoCompraApli" name="MontoCompraApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="DesdeApli">DESDE</label>
-                <input type="date" id="DesdeApli" name="DesdeApli" ngModel/>
+                <input type="date" id="DesdeApli" name="DesdeApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="OrdenCompraApli">ORDEN DE COMPRA</label>
-                <input id="OrdenCompraApli" name="OrdenCompraApli" ngModel/>
+                <input id="OrdenCompraApli" name="OrdenCompraApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="GastosJustificadosApli">% OTROS GASTOS JUSTIFICADOS</label>
-                <input type="number" id="GastosJustificadosApli" name="GastosJustificadosApli" ngModel/>
+                <input type="number" id="GastosJustificadosApli" name="GastosJustificadosApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="HastaApli">HASTA</label>
-                <input type="date" id="HastaApli" name="HastaApli" ngModel/>
+                <input type="date" id="HastaApli" name="HastaApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="AfianzadorAduanaApli">AFIANZADOR DE ADUANA</label>
-                <input id="AfianzadorAduanaApli" name="AfianzadorAduanaApli" ngModel/>
+                <input id="AfianzadorAduanaApli" name="AfianzadorAduanaApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="SumaAseguradaApli">SUMA ASEGURADA</label>
-                <input type="number" id="SumaAseguradaApli" name="SumaAseguradaApli" placeholder="SUMA ASEGURADA" ngModel/>
+                <input type="number" id="SumaAseguradaApli" name="SumaAseguradaApli" placeholder="SUMA ASEGURADA" ngModel required/>
             </div>
             <div>
                 <label htmlFor="TipoTransporApli">TIPO TRANSPORTE</label>
-                <select  id="TipoTransporApli" name="TipoTransporApli" ngModel>
+                <select  id="TipoTransporApli" name="TipoTransporApli" ngModel required>
                     <option disabled selected>SELECCIONE</option>
                     <option value="1">TERRESTRE</option>
                     <option value="2">AÉREO</option>
@@ -96,19 +96,19 @@
             </div>
             <div>
                 <label htmlFor="IncotermsApli">INCOTERMS</label>
-                <input id="IncotermsApli" name="IncotermsApli" ngModel/>
+                <input id="IncotermsApli" name="IncotermsApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="TasaApli">TASA</label>
-                <input type="number" id="TasaApli" name="TasaApli" placeholder="%" ngModel/>
+                <input type="number" id="TasaApli" name="TasaApli" placeholder="%" ngModel required/>
             </div>
             <div>
-                <label htmlFor="PertenecienteApli">PERTECIENTE</label>
-                <input id="PertenecienteApli" name="PertenecienteApli" ngModel/>
+                <label htmlFor="PertenecienteApli">PERTENECIENTE</label>
+                <input id="PertenecienteApli" name="PertenecienteApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="ItemsApli">ITEMS</label>
-                <select  id="ItemsApli" name="ItemsApli" ngModel>
+                <select  id="ItemsApli" name="ItemsApli" ngModel required>
                     <option disabled selected>SELECCIONE</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -117,51 +117,51 @@
             </div>
             <div>
                 <label htmlFor="ValorPrimaApli">VALOR PRIMA</label>
-                <input type="number" id="ValorPrimaApli" name="ValorPrimaApli" placeholder="VALOR PRIMA" ngModel/>
+                <input type="number" id="ValorPrimaApli" name="ValorPrimaApli" placeholder="VALOR PRIMA" ngModel required/>
             </div>
             <div>
                 <label htmlFor="FechaEmbarqueApli">FECHA EMBARQUE</label>
-                <input type="date" id="FechaEmbarqueApli" name="FechaEmbarqueApli" ngModel/>
+                <input type="date" id="FechaEmbarqueApli" name="FechaEmbarqueApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="Marca">MARCA</label>
-                <input id="Marca" name="Marca" ngModel/>
+                <input id="Marca" name="Marca" ngModel required/>
             </div>
             <div>
                 <label htmlFor="CoberturaApli">COBERTURA</label>
-                <input id="CoberturaApli" name="CoberturaApli" placeholder="TODO RIESGO" ngModel/>
+                <input id="CoberturaApli" name="CoberturaApli" placeholder="TODO RIESGO" ngModel required/>
             </div>
             <div>
                 <label htmlFor="ConsiganadaApli">CONSIGNADA A</label>
-                <input id="ConsiganadaApli" name="ConsiganadaApli" ngModel/>
+                <input id="ConsiganadaApli" name="ConsiganadaApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="NOApli">NO°</label>
-                <input id="NOApli" name="NOApli"/>
+                <input id="NOApli" name="NOApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="DeducibleApli">DEDUCIBLE</label>
-                <input type="number" id="DeducibleApli" name="DeducibleApli" placeholder="10%" ngModel/>
+                <input type="number" id="DeducibleApli" name="DeducibleApli" placeholder="10%" ngModel required/>
             </div>
             <div>
                 <label htmlFor="FechaLlegadaApli">FECHA LLEGADA</label>
-                <input type="date" id="FechaLlegadaApli" name="FechaLlegadaApli" ngModel/>
+                <input type="date" id="FechaLlegadaApli" name="FechaLlegadaApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="PesoBrutoApli">PESO BRUTO</label>
-                <input type="number" id="PesoBrutoApli" name="PesoBrutoApli" ngModel/>
+                <input type="number" id="PesoBrutoApli" name="PesoBrutoApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="ObjetoSeguroApli">OBJETO DEL SEGURO</label>
-                <input id="ObjetoSeguroApli" name="ObjetoSeguroApli" ngModel/>
+                <input id="ObjetoSeguroApli" name="ObjetoSeguroApli" ngModel required/>
             </div>
             <div>
                 <label htmlFor="DescripcionApli">DESCRIPCIÓN CONTENIDO</label>
-                <input id="DescripcionApli" name="DescripcionApli" class="descripcion" ngModel/>
+                <input id="DescripcionApli" name="DescripcionApli" class="descripcion" ngModel required/>
             </div>
             <div>
                 <label htmlFor="ObservacionesApli">OBSERVACIONES</label>
-                <input id="ObservacionesApli" name="ObservacionesApli" class="observaciones" ngModel/>
+                <input id="ObservacionesApli" name="ObservacionesApli" class="observaciones" ngModel required/>
             </div>
             <pre></pre>
             
