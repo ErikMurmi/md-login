@@ -15,6 +15,16 @@ export class FormComponent {
 
     onSubmit(formData:any) {
         formData.value["Empresa"] = "Supermaxi"
+        formData.value["MontoCompraApli"] = formData.value["MontoCompraApli"].toString()
+        formData.value["BultosApli"] = formData.value["BultosApli"].toString()
+        formData.value["SumaAseguradaApli"] = formData.value["SumaAseguradaApli"].toString()
+        formData.value["TasaApli"] = formData.value["TasaApli"].toString()
+        formData.value["PesoBrutoApli"] = formData.value["PesoBrutoApli"].toString()
+        formData.value["GastosJustificadosApli"] = formData.value["GastosJustificadosApli"].toString()
+        formData.value["TasaApli"] = formData.value["TasaApli"].toString()
+        formData.value["ValorPrimaApli"] = formData.value["ValorPrimaApli"].toString()
+        formData.value["DeducibleApli"] = formData.value["DeducibleApli"].toString()
+        
         console.log(formData.value);
         this.http.post('https://apitransporte.azurewebsites.net/api/Aplicaciones/Crear', formData.value)
           .subscribe(response => {
