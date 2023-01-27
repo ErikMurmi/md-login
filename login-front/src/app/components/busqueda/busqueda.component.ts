@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
 import { HttpClient ,HttpHeaders } from '@angular/common/http';
+import { FilterPipe } from './filter.pipe';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-busqueda',
   templateUrl: './busqueda.component.html',
-  styleUrls: ['./busqueda.component.css']
+  styleUrls: ['./busqueda.component.css'],
+  providers: [FilterPipe]
+  
 })
 export class BusquedaComponent {
   myDataArray: any[] = [];
+  searchText: string = "";
+
+  
 
   constructor(private http: HttpClient) {}
 
@@ -19,7 +26,7 @@ export class BusquedaComponent {
     // replace with the appropriate URL for your back-end API
     let headers = new HttpHeaders();
     headers = headers.append("Access-Control-Allow-Origin", "https://md-login.vercel.app");
-    this.http.get('http://domenicar16-001-site1.atempurl.com/api/Aplicaciones/Listar',{headers}).subscribe(data => {
+    this.http.get('https://apitransporte.azurewebsites.net/api/Aplicaciones/Listar',{headers}).subscribe(data => {
       this.myDataArray = data as any[];
     });
   }

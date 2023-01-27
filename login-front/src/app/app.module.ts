@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { FormComponent } from './components/form/form.component';
 import { BusquedaComponent } from './components/busqueda/busqueda.component';
+import { FilterPipe } from './components/busqueda/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     FormComponent,
-    BusquedaComponent
+    BusquedaComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

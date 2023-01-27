@@ -3,6 +3,7 @@
 <header>
     <h1>APLICACIONES</h1>
 </header>
+<input type="text" [(ngModel)]="searchText" placeholder="Search by noApli">
 <table class="table">
     <thead class="thead-light">
       <tr>
@@ -13,7 +14,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of myDataArray">
+      <tr *ngFor="let item of myDataArray | filter:searchText: 'noApli'">
         <td>{{item.noApli}}</td>
         <td>{{item.desdeApli}}</td>
         <td>{{item.hastaApli}}</td>
@@ -21,3 +22,4 @@
       </tr>
     </tbody>
   </table>
+
