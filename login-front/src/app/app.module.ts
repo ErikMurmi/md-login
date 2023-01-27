@@ -10,6 +10,7 @@ import { FormComponent } from './components/form/form.component';
 import { BusquedaComponent } from './components/busqueda/busqueda.component';
 import { FilterPipe } from './components/busqueda/filter.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
