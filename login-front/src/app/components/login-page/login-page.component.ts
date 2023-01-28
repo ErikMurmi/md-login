@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { LoginServiceService } from 'src/app/services/login-service.service';
 import { Router } from '@angular/router';
+// import { AlertsService } from 'ngx-alerts';
 
 @Component({
   selector: 'app-login-page',
@@ -12,7 +13,7 @@ export class LoginPageComponent {
   loginForm: FormGroup;
   user = {}
 
-  constructor(private auth: LoginServiceService, private router: Router ){
+  constructor(private auth: LoginServiceService, private router: Router){
     this.loginForm = new FormGroup({
       EmailUsuario: new FormControl(''),
       PasswordUsuario: new FormControl(''),
@@ -52,6 +53,9 @@ export class LoginPageComponent {
     // console.log(formData.currency);
     //llama al servicio de autenticacion
   }
+
+
+  
 
   navigateToSupermaxi() {
     this.router.navigate(['/form']);

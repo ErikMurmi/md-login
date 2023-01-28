@@ -9,6 +9,8 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { FormComponent } from './components/form/form.component';
 import { BusquedaComponent } from './components/busqueda/busqueda.component';
 import { FilterPipe } from './components/busqueda/filter.pipe';
+import { AlertModule } from 'ngx-alerts';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { FilterPipe } from './components/busqueda/filter.pipe';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AlertModule.forRoot({maxMessages: 5, timeout: 5000})
   ],
   providers: [],
   bootstrap: [AppComponent]
