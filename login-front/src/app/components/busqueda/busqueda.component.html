@@ -4,7 +4,12 @@
 <header>
   <h1>APLICACIONES</h1>
 </header>
-<input type="text" [(ngModel)]="searchText" placeholder="Search by noApli">
+<label for="">Buscar por N°</label>
+<input type="text" [(ngModel)]="searchText" placeholder="N° Aplicación">
+<label for="start-date">Fecha Inicio:</label>
+<input type="date"  id="start-date">
+<label for="end-date">Fecha Fin:</label>
+<input type="date"  id="end-date">
 <table class="table">
   <thead class="thead-light">
     <tr>

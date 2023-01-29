@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
+import { Component, ViewChild } from '@angular/core';
+import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
+
 
 @Component({
   selector: 'app-root',
@@ -12,6 +15,17 @@ import { Router } from '@angular/router';
 export class AppComponent {
 
   constructor(private router: Router) {}
+
+  @ViewChild('sidebar')
+    public sidebar: SidebarComponent;
+    public width: string = '290px';
+    public onCreated(args: any) {
+         this.sidebar.element.style.visibility = '';
+    }
+    openClick(): void {
+        this.sidebar.toggle();
+    }
+
 
   title = 'login-front';
   

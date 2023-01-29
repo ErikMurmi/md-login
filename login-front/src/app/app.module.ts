@@ -10,6 +10,8 @@ import { FormComponent } from './components/form/form.component';
 import { BusquedaComponent } from './components/busqueda/busqueda.component';
 import { FilterPipe } from './components/busqueda/filter.pipe';
 import { AlertModule } from 'ngx-alerts';
+import { SidebarModule } from '@syncfusion/ej2-angular-navigations';
+import { RegistroUsuariosComponent } from './components/registro-usuarios/registro-usuarios.component';
 
 
 
@@ -19,10 +21,13 @@ import { AlertModule } from 'ngx-alerts';
     LoginPageComponent,
     FormComponent,
     BusquedaComponent,
-    FilterPipe
+    FilterPipe,
+    RegistroUsuariosComponent
+    
   ],
   imports: [
     BrowserModule,
+    SidebarModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
