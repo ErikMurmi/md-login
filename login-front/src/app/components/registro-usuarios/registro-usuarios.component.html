@@ -1,56 +1,51 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
- 
+<link href="../../../styles.css" rel="styles">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
 <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <a class="navbar-brand" href="#">
-          <img src="assets/imgs/acme_logo.png" alt="logo_icon" width="60" height="60" loading="lazy">
-        </a>
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    
-    <div class="nav-links">
-      <a href="#">Inicio</a>
-      <a href="form">Generar Aplicaciones</a>
-      <a href="buscar">Buscar Aplicaciones</a>
-      <a href="registro">Registrar Usuarios</a>
-      
-    </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <a class="navbar-brand" href="#">
+      <img src="assets/imgs/acme_logo.png" alt="logo_icon" width="60" height="60" loading="lazy">
+    </a>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
   </div>
 
-<div class="form-container">
+  <div class="nav-links">
+    <a href="#">Inicio</a>
+    <a href="form">Generar Aplicaciones</a>
+    <a href="buscar">Buscar Aplicaciones</a>
+    <a href="registro">Registrar Usuarios</a>
 
-    
-    <form>
-        <h1>REGISTRO DE USUARIOS</h1>
-        <label>Email:</label>
-        <input type="email" name="email">
-    
-        <label>Contraseña:</label>
-        <input type="password"name="password">
-    
-        <label>Tipo</label>
-        <select name="" id="">
-            <option value="">OPCION 1</option>
-            <option value="">OPCION 2</option>
-            <option value="">OPCION 3</option>
-            <option value="">OPCION 4</option>
-        </select>
-        <button type="submit">Registrar</button>
-        <img src="assets/imgs/acme_logo.png" alt="logo_icon" width="300" height="300" loading="lazy">
-    
-    </form>
-    
-    
-
+  </div>
 </div>
+<body id="centered-items">
+  <div class="register-container">
+    <form class="login-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()"  >
+      <h1>REGISTRO DE USUARIOS</h1>
+      <label for="Email">Email</label>
+      <input type="email" name="Email" formControlName="email">
+
+      <label>Contraseña</label>
+      <input type="password" formControlName="password">
+
+      <label>Rol</label>
+      <select formControlName="rol">
+        <option value="">Escoje un rol</option>
+        <option value=1>Administrador</option>
+        <option value=2>Cliente</option>
+        <option value=3>Ejecutivo</option>
+      </select>
+      <button type="submit">Registrar</button>
+    </form>
+
+  </div>
+</body>

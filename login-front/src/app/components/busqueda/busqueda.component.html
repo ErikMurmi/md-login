@@ -1,59 +1,69 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
   integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <a class="navbar-brand" href="#">
-          <img src="assets/imgs/acme_logo.png" alt="logo_icon" width="60" height="60" loading="lazy">
-        </a>
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    
-    <div class="nav-links">
-      <a href="#">Inicio</a>
-      <a href="form">Generar Aplicaciones</a>
-      <a href="buscar">Buscar Aplicaciones</a>
-      <a href="registro">Registrar Usuarios</a>
-      
-    </div>
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <a class="navbar-brand" href="#">
+      <img src="assets/imgs/acme_logo.png" alt="logo_icon" width="60" height="60" loading="lazy">
+    </a>
   </div>
-    
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
 
-<header>
+  <div class="nav-links">
+    <a href="#">Inicio</a>
+    <a href="form">Generar Aplicaciones</a>
+    <a href="buscar">Buscar Aplicaciones</a>
+    <a href="registro">Registrar Usuarios</a>
+
+  </div>
+</div>
+
+<body>
   <h1>APLICACIONES</h1>
-</header>
-<label for="">Buscar por N°</label>
-<input type="text" [(ngModel)]="searchText" placeholder="N° Aplicación">
-<label for="start-date">Fecha Inicio:</label>
-<input type="date"  id="start-date">
-<label for="end-date">Fecha Fin:</label>
-<input type="date"  id="end-date">
-<table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th>NOApli</th>
-      <th>Fecha Embarque</th>
-      <th>Fecha Llegada</th>
-      <th>MontoCompraApli</th>
-      <th>DescripcionApli</th>
-      <th>ValorPrimaApli</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let item of myDataArray | filter:searchText: 'noApli'">
-      <td>{{item.noApli}}</td>
-      <td>{{item.fechaEmbarqueApli}}</td>
-      <td>{{item.fechaLlegadaApli}}</td>
-      <td>{{item.montoCompraApli}}</td>
-      <td>{{item.descripcionApli}}</td>
-      <td>{{item.valorPrimaApli}}</td>
-    </tr>
-  </tbody>
-</table>
+  <div class="flex-row">
+    <div class="input-container">
+      <label for="">Buscar por N°</label>
+      <input class="styled-input" type="text" [(ngModel)]="searchText" placeholder="N° Aplicación">
+    </div>
+    <div class="date-input-container">
+      <label for="start-date">Fecha Inicio:</label>
+      <input class="styled-input" type="date" id="start-date">
+    </div>
+    <div class="date-input-container">
+      <label for="end-date">Fecha Fin:</label>
+      <input class="styled-input" type="date" id="end-date">
+    </div>
+    <button type="submit">Buscar</button>
+  </div>
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>NOApli</th>
+          <th>Fecha Embarque</th>
+          <th>Fecha Llegada</th>
+          <th>MontoCompraApli</th>
+          <th>DescripcionApli</th>
+          <th>ValorPrimaApli</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of myDataArray | filter:searchText: 'noApli'">
+          <td>{{item.noApli}}</td>
+          <td>{{item.fechaEmbarqueApli}}</td>
+          <td>{{item.fechaLlegadaApli}}</td>
+          <td>{{item.montoCompraApli}}</td>
+          <td>{{item.descripcionApli}}</td>
+          <td>{{item.valorPrimaApli}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
