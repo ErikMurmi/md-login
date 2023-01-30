@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,9 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 export class FormComponent {
   
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient, private router: Router) { }
+
+    
 
     form = new FormGroup({
       name: new FormControl('', Validators.required)
@@ -35,7 +38,7 @@ export class FormComponent {
       } else {
         console.log("Campos llenos");
         formData.value["Empresa"] = "Supermaxi"
-        formData.value["MontoCompraApli"] = formData.value["MontoCompraApli"].toString()
+        /*formData.value["MontoCompraApli"] = formData.value["MontoCompraApli"].toString()
         formData.value["BultosApli"] = formData.value["BultosApli"].toString()
         formData.value["SumaAseguradaApli"] = formData.value["SumaAseguradaApli"].toString()
         formData.value["TasaApli"] = formData.value["TasaApli"].toString()
@@ -43,7 +46,7 @@ export class FormComponent {
         formData.value["GastosJustificadosApli"] = formData.value["GastosJustificadosApli"].toString()
         formData.value["TasaApli"] = formData.value["TasaApli"].toString()
         formData.value["ValorPrimaApli"] = formData.value["ValorPrimaApli"].toString()
-        formData.value["DeducibleApli"] = formData.value["DeducibleApli"].toString()
+        formData.value["DeducibleApli"] = formData.value["DeducibleApli"].toString()*/
         
         console.log(formData.value);
         this.http.post('https://apitransporte.azurewebsites.net/api/Aplicaciones/Crear', formData.value)

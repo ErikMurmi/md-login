@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { LoginServiceService } from 'src/app/services/login-service.service';
 import { Router } from '@angular/router';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 // import { AlertsService } from 'ngx-alerts';
 
 @Component({

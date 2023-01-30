@@ -12,8 +12,9 @@ import { FilterPipe } from './components/busqueda/filter.pipe';
 import { AlertModule } from 'ngx-alerts';
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations';
 import { RegistroUsuariosComponent } from './components/registro-usuarios/registro-usuarios.component';
-
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,14 @@ import { RegistroUsuariosComponent } from './components/registro-usuarios/regist
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    AlertModule.forRoot({maxMessages: 5, timeout: 5000})
+    AlertModule.forRoot({maxMessages: 5, timeout: 5000}), 
+    MatSidenavModule,
+    MatListModule,
+    RouterModule.forRoot([
+      { path: 'form', component: FormComponent },
+      { path: 'search', component: BusquedaComponent },
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

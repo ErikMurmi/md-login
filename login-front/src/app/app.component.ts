@@ -26,6 +26,14 @@ export class AppComponent {
         this.sidebar.toggle();
     }
 
+    navigateToForm() {
+      this.router.navigate(['/form']);
+    }
+    //navigating to search
+    navigateToSearch() {
+      this.router.navigate(['/search']);
+    }
+
 
   title = 'login-front';
   
