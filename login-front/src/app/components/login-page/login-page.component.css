@@ -1,46 +1,93 @@
-.form-container{
+h1 {
+    margin-bottom: 0;
+}
+
+.form-container {
     background-color: white;
-    margin: 10% auto;
-    padding: 50px;
+    margin-inline: 5%;
+    padding: 5%;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    gap: 30px;
+    gap: 20px;
     width: fit-content;
 }
 
-.login-form{
+.login-form {
     display: flex;
     flex-direction: column;
     margin-top: -20px;
     gap: 10px;
+    width: 40%;
 }
 
-input{
+input {
     border-color: #3999FF;
     border-radius: 10px;
     font-size: large;
     padding: 10px;
 }
 
-input[type="submit"]{
-    background-color:#4057ff ;
+input[type="submit"] {
+    background-color: #4057ff;
     color: white;
     font-weight: bold;
     margin-top: 20px;
     border: none;
 }
 
-select{
+select {
     border-color: #3999FF;
     border-radius: 10px;
     font-size: large;
     padding: 10px;
 }
 
-body{
+body {
+    height: 100vh;
     background-image: url(https://drive.google.com/uc?export=view&id=105dr0CV0IXA2XSqHpOVkocmBMEt-v203);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-line {
+    height: 40vh;
+    padding-inline: .1%;
+    border-width: 0;
+    color: gray;
+    background-color: #3999FF
+}
+
+/*Este media query es para el diseño movil*/
+
+@media (max-width: 767px) {
+    .form-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+        padding: 3% 0%;
+    }
+
+    .login-form {
+        width: 80%;
+        margin-top: -10px;
+        
+    }
+
+    input[type="submit"] {
+        width: 50%;
+        align-self: center;
+    }
+
+    /*Oculta la linea que separa la imagen*/
+    .vertical-line {
+        display: none;
+    }
 }

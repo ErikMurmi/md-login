@@ -1,7 +1,3 @@
-body{
-    background-size: cover;
-    background-repeat: no-repeat;
+html,body{
     margin: 0;
-    font-family: 'Noto Sans Wancho', sans-serif;
-    overflow-x: hidden;
 }
