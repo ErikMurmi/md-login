@@ -30,7 +30,14 @@
 <body id="centered-items">
   <div class="register-container">
     <form class="login-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()"  >
-      <h1>REGISTRO DE USUARIOS</h1>
+      <h2>REGISTRO DE USUARIOS</h2>
+
+      <label for="Apellido">Nombre</label>
+      <input name="Apellido" formControlName="apellido">
+
+      <label for="Nombre">Apellido</label>
+      <input name="Nombre" formControlName="nombre">
+
       <label for="Email">Email</label>
       <input type="email" name="Email" formControlName="email">
 
@@ -38,11 +45,20 @@
       <input type="password" formControlName="password">
 
       <label>Rol</label>
-      <select formControlName="rol">
+      <select formControlName="idRol">
         <option value="">Escoje un rol</option>
-        <option value=1>Administrador</option>
-        <option value=2>Cliente</option>
-        <option value=3>Ejecutivo</option>
+        <option value=1>Cliente</option>
+        <option value=2>Ejecutivo</option>
+        <option value=3>Administrador</option>
+      </select>
+
+      <label>Empresa</label>
+      <select formControlName="idEmpresa">
+        <option value="">Selecciona una</option>
+        <!-- <option value="">No aplica</option>
+        <option value=1>Supermaxi</option>
+        <option value=2>Fybveca</option> -->
+        <option *ngFor="let option of optionsList" [value]="option.idEmpresa">{{option.nombre}}</option>
       </select>
       <button type="submit">Registrar</button>
     </form>

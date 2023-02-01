@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { LoginServiceService } from 'src/app/services/login-service.service';
 import { Router } from '@angular/router';
+import * as jwt_decode from "jwt-decode";
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
@@ -18,8 +19,8 @@ export class LoginPageComponent {
 
   constructor(private auth: LoginServiceService, private router: Router){
     this.loginForm = new FormGroup({
-      EmailUsuario: new FormControl(''),
-      PasswordUsuario: new FormControl(''),
+      Email: new FormControl(''),
+      Password: new FormControl(''),
       currency: new FormControl('')
     });
   }
@@ -37,8 +38,12 @@ export class LoginPageComponent {
           this.navigateToAdmin()
         }
 
-        if(res.rol ==="Usuarios"){
-          this.navigateToFybeca()
+        if(res.rol ==="Cliente"){
+          this.navigateToCliente()
+        }
+
+        if(res.rol ==="Ejecutivo"){
+          this.navigateToEjecutivo()
         }
 
         // if(this.user === "Administrador"){
@@ -57,18 +62,24 @@ export class LoginPageComponent {
     //llama al servicio de autenticacion
   }
 
+  // decodeToken(token: string): any {
+  //   try {
+  //     return jwt_decode(token);
+  //   } catch (Error) {
+  //     return null;
+  //   }
+  // }
 
-  
 
-  navigateToSupermaxi() {
-    this.router.navigate(['/form']);
+  navigateToEjecutivo() {
+    this.router.navigate(['/buscar']);
   }
 
-  navigateToFybeca() {
+  navigateToCliente() {
     this.router.navigate(['/form']);
   }
 
   navigateToAdmin() {
-    this.router.navigate(['/buscar']);
+    this.router.navigate(['/registro']);
   }
 }

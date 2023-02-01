@@ -2,8 +2,12 @@
   color: white;
 } */
 
-h1 {
+h2 {
   margin-bottom: 0;
+}
+
+body{
+  overflow-y: scroll;
 }
 
 .register-container {
@@ -21,7 +25,7 @@ h1 {
 
 .login-form {
   width: 90%;
-  gap: 20px;
+  gap: 10px;
 }
 
 

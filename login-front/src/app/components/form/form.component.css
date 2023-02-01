@@ -17,23 +17,16 @@ header {
   font-size: 20px;
 }
 
-.form {
+.aplicacion-form{
   margin-top: 3%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
-  margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
   font-family: 'Inter', sans-serif;
   text-align: left;
   font-size: 16px;
-}
-
-select {
-  border-color: #3999FF;
-  border-radius: 10px;
-  font-size: large;
-  padding: 10px 37px;
-  margin-top: 2%;
 }
 
 option {
@@ -44,30 +37,42 @@ input::placeholder {
   opacity: 40%;
 }
 
-input {
-  border-color: #3999FF;
-  border-radius: 10px;
+input,select,textarea{
+  border: 1px solid #2666ab;
+  color: black;
+  border-radius: 15px;
   font-size: large;
   padding: 10px;
   margin-top: 2%;
   text-align: left;
 }
 
-input[type="submit"] {
-  background-color: #4057ff;
-  color: white;
+
+
+button {
+  background-color: #2169e7;
   font-weight: bold;
-  margin-top: 20px;
+  color: white;
+  padding: 12px 20px;
+  width: 50%;
   border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: end;
+  margin-top: 5%;
 }
 
-.row {
-  justify-content: space-between;
-}
+/* .row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+} */
 
-input,
 label {
-  display: block;
+  margin-bottom: 0;
+  margin-top: 15PX;
+  font-weight: bold;
+  padding-left: 5px;
 }
 
 button {
@@ -75,61 +80,23 @@ button {
   color: white;
 }
 
-.descripcion {
-  width: 200px;
-  height: 70px;
+textarea{
+  resize:both;
+  margin-top: 1%;
 }
-
-.observaciones {
-  width: 200px;
-  height: 70px;
-}
-
-
-.nav {
-  height: 70px;
-  width: 100%;
-  background-color: #4875f1;
-  position: relative;
-}
-
-.nav>.nav-header {
-  display: inline;
-}
-
-.nav>.nav-header>.nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-}
-
-.nav>.nav-btn {
-  display: none;
-}
-
-.nav>.nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav>.nav-links>a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
-  text-decoration: none;
-  color: #efefef;
-}
-
-.nav>.nav-links>a:hover {
-  background-color: #3178ea;
-}
-
-.nav>#nav-check {
-  display: none;
+body {
+  margin: 3% 10%;
 }
 
 @media (max-width:768px) {
+  label,input, .fixed-label{
+    font-size: x-small;
+  }
+
+  body {
+    margin: 5% 3%;
+  }
+
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -184,6 +151,3 @@ button {
   }
 }
 
-body {
-  margin: 3%;
-}

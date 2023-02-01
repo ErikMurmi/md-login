@@ -13,7 +13,7 @@ label {
   flex-grow: 4;
 }
 
-button {
+button[type="submit"]{
   background-color: #2169e7;
   font-weight: bold;
   color: white;
@@ -24,6 +24,10 @@ button {
   cursor: pointer;
   flex-grow: 1;
   align-self: end;
+}
+
+btn{
+  margin-right: 1%;
 }
 
 .nav {

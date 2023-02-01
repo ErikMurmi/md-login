@@ -1,8 +1,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 
 <div class="nav">
     <input type="checkbox" id="nav-check">
@@ -21,173 +20,191 @@
 
     <div class="nav-links">
         <a href="#">Inicio</a>
-        <a href="form">Generar Aplicaciones</a>
-        <a href="buscar">Buscar Aplicaciones</a>
+        <a href="form">Generar caciones</a>
+        <a href="buscar">Buscar caciones</a>
         <a href="registro">Registrar Usuarios</a>
 
     </div>
 </div>
 
-<body>
+<body style="background-color: blue;">
     <div class="form-app">
-        <h1 style="align-self: center;">GENERAR APLICACIONES</h1>
-        <form class="form" (ngSubmit)="onSubmit(formData)" #formData="ngForm">
-            <div class="header-info">
-                <h4>N° Póliza</h4>
+        <h1 style="align-self: center;">Generar caciones</h1>
+        <h4>N° Póliza 456</h4>
+        <form class="Aplicacion-form" (ngSubmit)="onSubmit(formData)" #formData="ngForm">
+            <div>
+                <label>N°</label><br />
+                <input id="no" name="numeroAplicacion" ngModel required />
             </div>
             <div>
-                <h4>N°</h4>
-                <input id="noApli" name="noApli" ngModel required />
+                <label style="margin-top:10px;">Fecha cación</label><br/>
+                <input type="date" id="Fecha" name="Fecha" ngModel required />
             </div>
-            <div>
-                <h4>Fecha Apl</h4>
-                <input type="date" id="FechaApli" name="FechaApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="AseguradoApli">ASEGURADO</label>
-                <select id="AseguradoApli" name="AseguradoApli" ngModel required>
+
+            <div class="v-i-container-f">
+                <label htmlFor="Asegurado">Asegurado</label>
+                <select id="Asegurado" name="Asegurado" ngModel required>
                     <option disabled selected>SELECCIONE</option>
-                    <option value="1">ASEGURADO 1</option>
-                    <option value="2">ASEGURADO 2</option>
-                    <option value="3">ASEGURADO 3</option>
-                    <option value="3">ASEGURADO 4</option>
-                    <option value="3">ASEGURADO 5</option>
+                    <option value="Vortex Solutions">Vortex Solutions</option>
+                    <option value="Moonlight Enterprise">Moonlight Enterprise</option>
+                    <option value="Horizon Technologies">Horizon Technologies</option>
+                    <option value="Luminous Innovations">Luminous Innovations</option>
                 </select>
             </div>
-            <div>
-                <label htmlFor="EmbarcadoPorApli">EMBARGADOR POR</label>
-                <input id="EmbarcadoPorApli" name="EmbarcadoPorApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="BultosApli">BULTOS</label>
-                <input type="number" id="BultosApli" name="BultosApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="pagadorApli">PAGADOR</label>
-                <select id="PagadorApli" name="pagadorApli" ngModel required>
-                    <option disabled selected>SELECCIONE</option>
-                    <option value="1">PAGADOR 1</option>
-                    <option value="2">PAGADOR 2</option>
-                    <option value="3">PAGADOR 3</option>
-                    <option value="3">PAGADOR 4</option>
-                    <option value="3">PAGADOR 5</option>
+            <div class="v-i-container-f">
+                <label htmlFor="pagador">Pagador</label>
+                <select id="Pagador" name="pagador" ngModel required>
+                    <option disabled selected>Seleccione</option>
+                    <option value="Vortex Solutions">Vortex Solutions</option>
+                    <option value="Moonlight Enterprise">Moonlight Enterprise</option>
+                    <option value="Horizon Technologies">Horizon Technologies</option>
+                    <option value="Luminous Innovations">Luminous Innovations</option>
                 </select>
             </div>
-            <div>
-                <label htmlFor="NotaPedidoApli">NOTA DE PEDIDO</label>
-                <input id="NotaPedidoApli" name="NotaPedidoApli" ngModel required />
+            <div class="v-input-container">
+                <label htmlFor="Desde">Desde</label>
+                <input id="Desde" name="Desde" ngModel required />
             </div>
-            <div>
-                <label htmlFor="MontoCompraApli">MONTO TOTAL COMPRA</label>
-                <input type="number" id="MontoCompraApli" name="MontoCompraApli" ngModel required />
+            <div class="v-input-container">
+                <label htmlFor="Hasta">Hasta</label>
+                <input id="Hasta" name="Hasta" ngModel required />
             </div>
-            <div>
-                <label htmlFor="DesdeApli">DESDE</label>
-                <input id="DesdeApli" name="DesdeApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="OrdenCompraApli">ORDEN DE COMPRA</label>
-                <input id="OrdenCompraApli" name="OrdenCompraApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="GastosJustificadosApli">% OTROS GASTOS JUSTIFICADOS</label>
-                <input type="number" id="GastosJustificadosApli" name="GastosJustificadosApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="HastaApli">HASTA</label>
-                <input id="HastaApli" name="HastaApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="AfianzadorAduanaApli">AFIANZADOR DE ADUANA</label>
-                <input id="AfianzadorAduanaApli" name="AfianzadorAduanaApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="SumaAseguradaApli">SUMA ASEGURADA</label>
-                <input type="number" id="SumaAseguradaApli" name="SumaAseguradaApli" placeholder="SUMA ASEGURADA"
-                    ngModel required />
-            </div>
-            <div>
-                <label htmlFor="TipoTransporApli">TIPO TRANSPORTE</label>
-                <select id="TipoTransporApli" name="TipoTransporApli" ngModel required>
+            <div class="v-i-container-f">
+                <label htmlFor="TipoTransporte">Tipo Transporte</label>
+                <select id="TipoTransporte" name="TipoTransporte" ngModel required>
                     <option disabled selected>SELECCIONE</option>
-                    <option value="1">TRANSPORTE 1</option>
-                    <option value="2">TRANSPORTE 2</option>
-                    <option value="3">TRANSPORTE 3</option>
+                    <option value="1">ÁREO</option>
+                    <option value="2">MARITIMO</option>
+                    <option value="3">TERRESTRE</option>
                 </select>
             </div>
-            <div>
-                <label htmlFor="IncotermsApli">INCOTERMS</label>
-                <input id="IncotermsApli" name="IncotermsApli" ngModel required />
+            <div class="v-input-container">
+                <label htmlFor="Perteneciente">Perteneciente a</label>
+                <input id="Perteneciente" name="Perteneciente" ngModel required />
             </div>
-            <div>
-                <label htmlFor="TasaApli">TASA</label>
-                <input type="number" id="TasaApli" name="TasaApli" placeholder="%" ngModel required />
+            <div class="v-input-container">
+                <label htmlFor="FechaEmbarque">Fecha de embarque</label>
+                <input type="date" id="FechaEmbarque" name="FechaEmbarque" ngModel required />
             </div>
-            <div>
-                <label htmlFor="PertenecienteApli">PERTENECIENTE</label>
-                <input id="PertenecienteApli" name="PertenecienteApli" ngModel required />
+            <div class="v-input-container">
+                <label htmlFor="Consignada">Consignada a</label>
+                <input id="Consignada" name="Consignada" ngModel required />
             </div>
-            <div>
-                <label htmlFor="ItemsApli">ITEMS</label>
-                <select id="ItemsApli" name="ItemsApli" ngModel required>
+            <div class="v-input-container">
+                <label htmlFor="FechaLlegada">Fecha de llegada</label>
+                <input type="date" id="FechaLlegada" name="FechaLlegada" ngModel required />
+            </div>
+            <div class="v-i-container-f">
+                <label htmlFor="EmbarcadoPor">Embarcado por</label>
+                <input id="EmbarcadoPor" name="EmbarcadoPor" ngModel required />
+            </div>
+
+            <div class="v-input-container">
+                <label htmlFor="NotaPedido">Nota de pedido</label>
+                <input id="NotaPedido" name="NotaPedido" ngModel required />
+            </div>
+
+            <div class="v-input-container">
+                <label htmlFor="Incoterms">Incoterms</label>
+                <!-- <input id="Incoterms" name="Incoterms" ngModel required /> -->
+                <select id="Incoterms" name="Incoterms" ngModel required>
                     <option disabled selected>SELECCIONE</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option value="E">GRUPO E</option>
+                    <option value="F">GRUPO F</option>
+                    <option value="C">GRUPO C</option>
+                    <option value="D">GRUPO D</option>
                 </select>
             </div>
-            <div>
-                <label htmlFor="ValorPrimaApli">VALOR PRIMA</label>
-                <input type="number" id="ValorPrimaApli" name="ValorPrimaApli" placeholder="VALOR PRIMA" ngModel
-                    required />
+
+            <div class="v-i-container-f">
+                <label htmlFor="OrdenCompra">Orden de compra</label>
+                <input id="OrdenCompra" name="OrdenCompra" ngModel required />
             </div>
-            <div>
-                <label htmlFor="FechaEmbarqueApli">FECHA EMBARQUE</label>
-                <input type="date" id="FechaEmbarqueApli" name="FechaEmbarqueApli" ngModel required />
+            <div class="v-i-container-f">
+                <label htmlFor="AfianzadorAduana">Afianzador de aduana</label>
+                <input id="AfianzadorAduana" name="AfianzadorAduana" ngModel required />
             </div>
-            <div>
-                <label htmlFor="Marca">MARCA</label>
+
+            <div class="v-i-container-f">
+                <label htmlFor="Items">Items</label>
+                <select id="Items" name="Items" ngModel required>
+                    <option disabled selected>Seleccione</option>
+                    <option value="Juguetes">Juguetes</option>
+                    <option value="Comida">Comida</option>
+                    <option value="Ropa">Ropa</option>
+                </select>
+            </div>
+
+            <div class="v-input-container">
+                <label htmlFor="Marca">Marca</label>
                 <input id="Marca" name="Marca" ngModel required />
             </div>
-            <div>
-                <label htmlFor="CoberturaApli">COBERTURA</label>
-                <input id="CoberturaApli" name="CoberturaApli" placeholder="TODO RIESGO" ngModel required />
+            <div class="v-input-container">
+                <label htmlFor="no">N°</label>
+                <input id="no" name="no" ngModel required />
             </div>
-            <div>
-                <label htmlFor="ConsiganadaApli">CONSIGNADA A</label>
-                <input id="ConsiganadaApli" name="ConsiganadaApli" ngModel required />
+            <div class="v-input-container">
+                <label htmlFor="PesoBruto">Peso bruto</label>
+                <input type="number" id="PesoBruto" name="PesoBruto" ngModel required />
             </div>
-            <div>
-                <label htmlFor="NOApli">NO°</label>
-                <input type="number" id="NOApli" name="NOApli" ngModel required />
+            <div class="v-input-container">
+                <label htmlFor="Bultos">Bultos</label>
+                <input type="number" id="Bultos" name="Bultos" ngModel required />
             </div>
-            <div>
-                <label htmlFor="DeducibleApli">DEDUCIBLE</label>
-                <input type="number" id="DeducibleApli" name="DeducibleApli" placeholder="10%" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="FechaLlegadaApli">FECHA LLEGADA</label>
-                <input type="date" id="FechaLlegadaApli" name="FechaLlegadaApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="PesoBrutoApli">PESO BRUTO</label>
-                <input type="number" id="PesoBrutoApli" name="PesoBrutoApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="ObjetoSeguroApli">OBJETO DEL SEGURO</label>
-                <input id="ObjetoSeguroApli" name="ObjetoSeguroApli" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="DescripcionApli">DESCRIPCIÓN CONTENIDO</label>
-                <input id="DescripcionApli" name="DescripcionApli" class="descripcion" ngModel required />
-            </div>
-            <div>
-                <label htmlFor="ObservacionesApli">OBSERVACIONES</label>
-                <input id="ObservacionesApli" name="ObservacionesApli" class="observaciones" ngModel required />
-            </div>
-            <pre></pre>
 
-            <button class="guardar" type="submit">GUARDAR</button>
+            <div class="v-input-container">
+                <label htmlFor="MontoCompra">Monto total de compra</label>
+                <input type="number" id="MontoCompra" name="MontoCompra" ngModel required />
+            </div>
+
+
+            <div class="v-input-container">
+                <label class="fixed-label" htmlFor="GastosJustificados">% Otros gastos justificados</label>
+                <input type="number" id="GastosJustificados" name="GastosJustificados" ngModel required />
+            </div>
+
+
+            <div class="v-input-container">
+                <label htmlFor="SumaAsegurada">Suma asegurada</label>
+                <input type="number" id="SumaAsegurada" name="SumaAsegurada" placeholder="SUMA ASEGURADA"
+                    ngModel required />
+            </div>
+
+            <div class="v-input-container">
+                <label htmlFor="ValorPrima">Valor prima</label>
+                <input type="number" id="ValorPrima" name="ValorPrima" placeholder="VALOR PRIMA" ngModel
+                    required />
+            </div>
+
+            <div class="v-i-container-f">
+                <label htmlFor="Tasa">Tasa</label>
+                <input id="Tasa" name="Tasa" placeholder="%" ngModel required />
+            </div>
+
+            <div class="v-i-container-f">
+                <label htmlFor="Descripcion">Descripción contenido</label>
+                <textarea id="Descripcion" name="Descripcion" rows="4" ngModel required></textarea>
+            </div>
+            <div class="v-i-container-f">
+                <label htmlFor="Observaciones">Observaciones</label>
+                <textarea id="Observaciones" name="Observaciones" rows="4" ngModel required></textarea>
+            </div>
+
+            <div class="v-input-container">
+                <label htmlFor="Cobertura">Cobertura</label>
+                <input id="Cobertura" name="Cobertura" placeholder="TODO RIESGO" ngModel required />
+            </div>
+
+            <div class="v-input-container">
+                <label htmlFor="Deducible">Deducible</label>
+                <input id="Deducible" name="Deducible" placeholder="10%" ngModel required />
+            </div>
+            <div class="v-i-container-f">
+                <label htmlFor="ObjetoSeguro">Objeto del seguro</label>
+                <input id="ObjetoSeguro" name="ObjetoSeguro" ngModel required />
+            </div>
+
+            <button type="submit">Guardar</button>
 
 
         </form>

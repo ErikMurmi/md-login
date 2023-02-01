@@ -26,7 +26,7 @@ export class BusquedaComponent {
     // replace with the appropriate URL for your back-end API
     let headers = new HttpHeaders();
     headers = headers.append("Access-Control-Allow-Origin", "https://md-login.vercel.app");
-    this.http.get('https://apitransporte.azurewebsites.net/api/Aplicaciones/Listar',{headers}).subscribe(data => {
+    this.http.get('https://localhost:7214/api/Aplicaciones',{headers}).subscribe(data => {
       this.myDataArray = data as any[];
     });
   }

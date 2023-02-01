@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http"
 })
 export class LoginServiceService {
 
-  private base_url = 'https://apitransporte.azurewebsites.net/api/Usuarios'
+  private base_url = 'https://localhost:7214/api/Usuarios'
   constructor(private http: HttpClient) { }
   login(loginObj : any){
     return this.http.post<any>(`${this.base_url}/Login`,loginObj)

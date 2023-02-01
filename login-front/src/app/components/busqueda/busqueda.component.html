@@ -43,25 +43,30 @@
     <button type="submit">Buscar</button>
   </div>
   <div class="table-responsive">
-    <table class="table">
+    <table class="table  table-hover">
       <thead class="thead-light">
         <tr>
-          <th>NOApli</th>
+          <th>N°</th>
           <th>Fecha Embarque</th>
           <th>Fecha Llegada</th>
-          <th>MontoCompraApli</th>
-          <th>DescripcionApli</th>
-          <th>ValorPrimaApli</th>
+          <th>MontoCompra</th>
+          <th>Descripcion</th>
+          <th>Valor Prima</th>
+          <th>Opciones</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let item of myDataArray | filter:searchText: 'noApli'">
-          <td>{{item.noApli}}</td>
-          <td>{{item.fechaEmbarqueApli}}</td>
-          <td>{{item.fechaLlegadaApli}}</td>
-          <td>{{item.montoCompraApli}}</td>
-          <td>{{item.descripcionApli}}</td>
-          <td>{{item.valorPrimaApli}}</td>
+          <td>{{item.numeroAplicacion}}</td>
+          <td>{{item.fechaEmbarque  | date : 'dd/MM/yyyy'}}</td>
+          <td>{{item.fechaLlegada  | date : 'dd/MM/yyyy'}}</td>
+          <td>{{item.montoCompra + '' }}</td>
+          <td>{{item.descripcion}}</td>
+          <td>{{item.valorPrima + ''}}</td>
+          <td>
+            <button class="btn btn-outline-primary" style="margin-right:2%;">Aprobar</button>
+            <button class="btn btn-outline-danger">Anular</button>
+          </td>
         </tr>
       </tbody>
     </table>

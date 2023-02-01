@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { HttpClient ,HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-registro-usuarios',
@@ -7,22 +8,42 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./registro-usuarios.component.css']
 })
 export class RegistroUsuariosComponent {
+
+
   registerForm: FormGroup
-  constructor() {
+  optionsList: any;
+
+  ngOnInit() {
+    this.http.get('https://localhost:7214/api/Empresas')
+        .subscribe(response => {
+          console.log(response);
+          this.optionsList = response
+        });
+  }
+
+  constructor(private http: HttpClient) {
     this.registerForm = new FormGroup({
+      nombre: new FormControl(''),
+      apellido: new FormControl(''),
       email: new FormControl(''),
       password: new FormControl(''),
-      rol: new FormControl('')
+      idRol: new FormControl(''),
+      idEmpresa: new FormControl('')
     });
   }
 
   onSubmit() {
     const formData = this.registerForm.value;
     /** Validar seleccion del rol*/
-    if(formData['rol'] ==""){
-      alert('Se debe seleccionar un rol')
+    if(formData['nombre'] ==""||formData['apellido'] ==""||formData['rol'] =="" || formData['empresa'] =="" || formData['email'] =="" || formData['password'] ==""){
+      alert('Campos vacios revise la información')
     }else{
       /**Implementar la llamada a la api */
+      console.log(formData);
+      this.http.post('https://localhost:7214/api/Usuarios',formData).subscribe(response => {
+        console.log(response);
+        alert("Usuario agregado")
+    });
     }
 
     // this.auth.login(this.loginForm.value)

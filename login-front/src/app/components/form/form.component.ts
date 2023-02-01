@@ -14,46 +14,58 @@ export class FormComponent {
   
     constructor(private http: HttpClient, private router: Router) { }
 
-    
-
     form = new FormGroup({
       name: new FormControl('', Validators.required)
     });
 
     onSubmit(formData:any) {
 
-      if (!formData.value["noApli"] || !formData.value["FechaApli"] || !formData.value["AseguradoApli"]
-      || !formData.value["EmbarcadoPorApli"]  || !formData.value["BultosApli"] || !formData.value["pagadorApli"]
-      || !formData.value["NotaPedidoApli"] || !formData.value["MontoCompraApli"] || !formData.value["DesdeApli"]
-      || !formData.value["OrdenCompraApli"] || !formData.value["GastosJustificadosApli"]
-      || !formData.value["HastaApli"] || !formData.value["AfianzadorAduanaApli"] || !formData.value["SumaAseguradaApli"]
-      || !formData.value["TipoTransporApli"]|| !formData.value["IncotermsApli"]|| !formData.value["TasaApli"]
-      || !formData.value["PertenecienteApli"]|| !formData.value["ItemsApli"]|| !formData.value["ValorPrimaApli"]
-      || !formData.value["FechaEmbarqueApli"]|| !formData.value["Marca"]|| !formData.value["CoberturaApli"]
-      || !formData.value["ConsiganadaApli"]|| !formData.value["NOApli"]|| !formData.value["DeducibleApli"]
-      || !formData.value["FechaLlegadaApli"]|| !formData.value["PesoBrutoApli"]|| !formData.value["ObjetoSeguroApli"]
-      || !formData.value["DescripcionApli"]|| !formData.value["ObservacionesApli"]) {
+      console.log(formData.value);
+      formData.value["estado"] = "Creada"
+      formData.value["idEmpresa"] = 1
+      if (!formData.value["numeroAplicacion"] || !formData.value["Fecha"] || 
+      !formData.value["Asegurado"] || !formData.value["pagador"] || 
+      !formData.value["Desde"] || !formData.value["Hasta"] || 
+      !formData.value["TipoTransporte"] || !formData.value["Perteneciente"] ||
+      !formData.value["FechaEmbarque"] || !formData.value["Consignada"] ||
+      !formData.value["FechaLlegada"] || !formData.value["EmbarcadoPor"] ||
+      !formData.value["NotaPedido"] || !formData.value["Incoterms"] ||
+      !formData.value["OrdenCompra"] || !formData.value["AfianzadorAduana"] ||
+      !formData.value["Items"] || !formData.value["Marca"] ||
+      !formData.value["no"] || !formData.value["PesoBruto"] || !formData.value["Bultos"] || 
+      !formData.value["MontoCompra"] || !formData.value["GastosJustificados"] ||
+      !formData.value["SumaAsegurada"] || !formData.value["ValorPrima"] ||
+      !formData.value["Tasa"] || !formData.value["Descripcion"] ||
+      !formData.value["Observaciones"] || !formData.value["Cobertura"] ||
+      !formData.value["Deducible"] || !formData.value["ObjetoSeguro"]
+      ) {
         
         alert("Hay campos vacíos, por favor llenarlos");
       } else {
         console.log("Campos llenos");
-        formData.value["Empresa"] = "Supermaxi"
-        /*formData.value["MontoCompraApli"] = formData.value["MontoCompraApli"].toString()
-        formData.value["BultosApli"] = formData.value["BultosApli"].toString()
-        formData.value["SumaAseguradaApli"] = formData.value["SumaAseguradaApli"].toString()
-        formData.value["TasaApli"] = formData.value["TasaApli"].toString()
-        formData.value["PesoBrutoApli"] = formData.value["PesoBrutoApli"].toString()
-        formData.value["GastosJustificadosApli"] = formData.value["GastosJustificadosApli"].toString()
-        formData.value["TasaApli"] = formData.value["TasaApli"].toString()
-        formData.value["ValorPrimaApli"] = formData.value["ValorPrimaApli"].toString()
-        formData.value["DeducibleApli"] = formData.value["DeducibleApli"].toString()*/
+        //formData.value["Empresa"] = 1
+        /*formData.value["MontoCompra"] = formData.value["MontoCompra"].toString()
+        formData.value["Bultos"] = formData.value["Bultos"].toString()
+        formData.value["SumaAsegurada"] = formData.value["SumaAsegurada"].toString()
+        formData.value["Tasa"] = formData.value["Tasa"].toString()
+        formData.value["PesoBruto"] = formData.value["PesoBruto"].toString()
+        formData.value["GastosJustificados"] = formData.value["GastosJustificados"].toString()
+        formData.value["Tasa"] = formData.value["Tasa"].toString()
+        formData.value["ValorPrima"] = formData.value["ValorPrima"].toString()
+        formData.value["Deducible"] = formData.value["Deducible"].toString()*/
         
         console.log(formData.value);
-        this.http.post('https://apitransporte.azurewebsites.net/api/Aplicaciones/Crear', formData.value)
-          .subscribe(response => {
-            console.log(response);
-            alert("Se agrega correctamente")
-          });
+        // this.http.post('https://md-transporte-api.azurewebsites.net/api/Aplicaciones', formData.value)
+        //   .subscribe(response => {
+        //     console.log(response);
+        //     alert("Se agrega correctamente")
+        //   });
+        
+        this.http.post('https://localhost:7214/api/Aplicaciones', formData.value)
+        .subscribe(response => {
+          console.log(response);
+          alert("Se agrega correctamente")
+        });
       }
 
         

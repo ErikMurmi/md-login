@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Metodologia\\transport-api\\transport-api\\transport-api.csproj": {}
+    "P:\\md-login\\transport-api\\transport-api\\transport-api.csproj": {}
   },
   "projects": {
-    "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj": {
+    "P:\\md-login\\transport-api\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj",
+        "projectUniqueName": "P:\\md-login\\transport-api\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\domer\\.nuget\\packages\\",
-        "outputPath": "C:\\Metodologia\\transport-api\\Datos\\obj\\",
+        "projectPath": "P:\\md-login\\transport-api\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\erikm\\.nuget\\packages\\",
+        "outputPath": "P:\\md-login\\transport-api\\Datos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\domer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\erikm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -34,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj"
+              "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj": {
+                "projectPath": "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -89,24 +83,18 @@
         }
       }
     },
-    "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj": {
+    "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\domer\\.nuget\\packages\\",
-        "outputPath": "C:\\Metodologia\\transport-api\\Entidades\\obj\\",
+        "projectPath": "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\erikm\\.nuget\\packages\\",
+        "outputPath": "P:\\md-login\\transport-api\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\domer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\erikm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -156,24 +144,18 @@
         }
       }
     },
-    "C:\\Metodologia\\transport-api\\transport-api\\transport-api.csproj": {
+    "P:\\md-login\\transport-api\\transport-api\\transport-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Metodologia\\transport-api\\transport-api\\transport-api.csproj",
+        "projectUniqueName": "P:\\md-login\\transport-api\\transport-api\\transport-api.csproj",
         "projectName": "transport-api",
-        "projectPath": "C:\\Metodologia\\transport-api\\transport-api\\transport-api.csproj",
-        "packagesPath": "C:\\Users\\domer\\.nuget\\packages\\",
-        "outputPath": "C:\\Metodologia\\transport-api\\transport-api\\obj\\",
+        "projectPath": "P:\\md-login\\transport-api\\transport-api\\transport-api.csproj",
+        "packagesPath": "C:\\Users\\erikm\\.nuget\\packages\\",
+        "outputPath": "P:\\md-login\\transport-api\\transport-api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\domer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\erikm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -186,11 +168,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Metodologia\\transport-api\\Datos\\Datos.csproj"
+              "P:\\md-login\\transport-api\\Datos\\Datos.csproj": {
+                "projectPath": "P:\\md-login\\transport-api\\Datos\\Datos.csproj"
               },
-              "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Metodologia\\transport-api\\Entidades\\Entidades.csproj"
+              "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj": {
+                "projectPath": "P:\\md-login\\transport-api\\Entidades\\Entidades.csproj"
               }
             }
           }
