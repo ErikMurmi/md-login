@@ -61,7 +61,7 @@ export class FormComponent {
         //     alert("Se agrega correctamente")
         //   });
         
-        this.http.post('https://localhost:7214/api/Aplicaciones', formData.value)
+        this.http.post('https://md-transporte-api.azurewebsites.net/api/Aplicaciones', formData.value)
         .subscribe(response => {
           console.log(response);
           alert("Se agrega correctamente")

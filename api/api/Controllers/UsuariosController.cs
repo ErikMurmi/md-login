@@ -61,8 +61,8 @@ namespace api.Controllers
     {
 
       var email = usuario.Email.ToLower();
-      var usuario_log = await _context.Usuarios.FirstOrDefaultAsync(u => usuario.Email == email);
-      if (usuario == null)
+      var usuario_log = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
+      if (usuario_log == null)
       {
         return NotFound();
       }
@@ -74,22 +74,13 @@ namespace api.Controllers
       var role = await this._context.Roles.FirstAsync(r => r.idRol == usuario_log.IdRol);
       var empr = await this._context.Empresas.FirstAsync(e => e.idEmpresa == usuario_log.IdEmpresa);
 
-      String rol = role.Nombre;
+      string rol = role.Nombre;
       string empresa = empr.Nombre;
 
 
 
       var claims = new List<Claim>
             {
-                //Claims contiene informacion acerca del usuario
-                //Son lo que es el usuario y no lo que el usuario puede hacer
-                //para ASP.NET
-                //new Claim (ClaimTypes.NameIdentifier, usuario.idUsuarios.ToString()),
-                //new Claim (ClaimTypes.Email,email),
-                //new Claim (ClaimTypes.Role,usuario.idRolUsuarios_FK.ToString()),
-
-                
-                //para VUE
                 new Claim("rol", rol),
                 new Claim("empresa", empresa),
 
