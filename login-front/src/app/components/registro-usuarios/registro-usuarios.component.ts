@@ -14,7 +14,7 @@ export class RegistroUsuariosComponent {
   optionsList: any;
 
   ngOnInit() {
-    this.http.get('https://localhost:7214/api/Empresas')
+    this.http.get('https://md-transporte-api.azurewebsites.net/api/Empresas')
         .subscribe(response => {
           console.log(response);
           this.optionsList = response
@@ -40,7 +40,7 @@ export class RegistroUsuariosComponent {
     }else{
       /**Implementar la llamada a la api */
       console.log(formData);
-      this.http.post('https://localhost:7214/api/Usuarios',formData).subscribe(response => {
+      this.http.post('https://md-transporte-api.azurewebsites.net/api/Usuarios',formData).subscribe(response => {
         console.log(response);
         alert("Usuario agregado")
     });
