@@ -75,7 +75,7 @@ namespace api.Controllers
       var empr = await this._context.Empresas.FirstAsync(e => e.idEmpresa == usuario_log.IdEmpresa);
 
       string rol = role.Nombre;
-      string empresa = empr.Nombre;
+      string empresa = empr.idEmpresa+"";
 
 
 

@@ -15,6 +15,7 @@ import { RegistroUsuariosComponent } from './components/registro-usuarios/regist
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,8 @@ import { RouterModule } from '@angular/router';
     FormComponent,
     BusquedaComponent,
     FilterPipe,
-    RegistroUsuariosComponent
-    
+    RegistroUsuariosComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginServiceService } from 'src/app/services/login-service.service';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { Router } from '@angular/router';
 
 export class FormComponent {
   
-    constructor(private http: HttpClient, private router: Router) { }
+    constructor(private http: HttpClient,public auth: LoginServiceService, private router: Router) { }
 
     form = new FormGroup({
       name: new FormControl('', Validators.required)
@@ -22,7 +23,7 @@ export class FormComponent {
 
       console.log(formData.value);
       formData.value["estado"] = "Creada"
-      formData.value["idEmpresa"] = 1
+      formData.value["idEmpresa"] = this.auth.user.empresa
       if (!formData.value["numeroAplicacion"] || !formData.value["Fecha"] || 
       !formData.value["Asegurado"] || !formData.value["pagador"] || 
       !formData.value["Desde"] || !formData.value["Hasta"] || 

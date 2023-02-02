@@ -8,6 +8,7 @@ h2 {
 
 body{
   overflow-y: scroll;
+  height: 40%;
 }
 
 .register-container {

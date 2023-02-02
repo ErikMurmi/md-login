@@ -1,10 +1,11 @@
+
 <body>
     
 <div class="form-container">
     <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
         <h1>LOG IN</h1>
         <label htmlFor="username">Usuario</label>
-        <input  formControlName="Email" name="username"/>
+        <input  formControlName="Email" name="username" type="email"/>
         <label htmlFor="password">Contraseña</label>
         <input formControlName="Password" name="password" type="password" />
         <label htmlFor="moneda">Moneda</label>

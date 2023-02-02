@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 
 import { Component, ViewChild } from '@angular/core';
-import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
+import { LoginServiceService } from './services/login-service.service';
 
 
 @Component({
@@ -14,34 +14,9 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 export class AppComponent {
 
-  constructor(private router: Router) {}
-
-  @ViewChild('sidebar')
-    public sidebar: SidebarComponent;
-    public width: string = '290px';
-    public onCreated(args: any) {
-         this.sidebar.element.style.visibility = '';
-    }
-    openClick(): void {
-        this.sidebar.toggle();
-    }
-
-    navigateToForm() {
-      this.router.navigate(['/form']);
-    }
-    //navigating to search
-    navigateToSearch() {
-      this.router.navigate(['/search']);
-    }
-
+  constructor(private router: Router, public auth: LoginServiceService) {}
 
   title = 'login-front';
   
-  navigateToLogin() {
-    this.router.navigate(['/login']);
-  }
 
-  navigateHome() {
-    this.router.navigate(['/']);
-  }
 }
